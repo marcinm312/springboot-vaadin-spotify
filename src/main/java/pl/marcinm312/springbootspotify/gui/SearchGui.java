@@ -1,7 +1,6 @@
 package pl.marcinm312.springbootspotify.gui;
 
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.grid.ColumnTextAlign;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.notification.Notification;
@@ -27,10 +26,10 @@ public class SearchGui extends VerticalLayout {
 	Button searchButton;
 	Grid<SpotifyAlbumDto> albumDtoGrid;
 
-	protected final org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
+	private final org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
 	@Autowired
-	public SearchGui(SpotifyAlbumClient spotifyAlbumClient){
+	public SearchGui(SpotifyAlbumClient spotifyAlbumClient) {
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		OAuth2Authentication details = (OAuth2Authentication) authentication;
 
@@ -47,20 +46,29 @@ public class SearchGui extends VerticalLayout {
 		albumDtoGrid.setHeightByRows(true);
 
 		searchButton = new Button("Search!");
-		searchButton.addClickListener(event -> {
-			log.info("----------------------------------------");
-			String searchValue = searchTextField.getValue().toLowerCase();
-			log.info("searchValue=" + searchValue);
-			try {
-				List<SpotifyAlbumDto> albumList = spotifyAlbumClient.getAlbumsByAuthor(details, searchValue);
-				log.info("albumList.size()=" + albumList.size());
-				albumDtoGrid.setItems(albumList);
-			} catch (HttpClientErrorException exc) {
-				log.error("Error while searching: " + exc.getMessage());
-				Notification.show("Session expired. Reload webpage", 5000, Notification.Position.MIDDLE);
-			}
-		});
+		searchButton.addClickListener(event -> searchButtonClickEvent(spotifyAlbumClient, details));
 
 		add(searchTextField, searchButton, albumDtoGrid);
+	}
+
+	private void searchButtonClickEvent(SpotifyAlbumClient spotifyAlbumClient, OAuth2Authentication details) {
+		log.info("----------------------------------------");
+		String searchValue = searchTextField.getValue().toLowerCase();
+		log.info("searchValue=" + searchValue);
+		try {
+			List<SpotifyAlbumDto> albumList = spotifyAlbumClient.getAlbumsByAuthor(details, searchValue);
+			log.info("albumList.size()=" + albumList.size());
+			albumDtoGrid.setItems(albumList);
+		} catch (HttpClientErrorException exc) {
+			log.error("Error while searching: " + exc.getMessage());
+			if ("Unauthorized".equals(exc.getStatusText())) {
+				Notification.show("Session expired. Reload webpage", 5000, Notification.Position.MIDDLE);
+			} else {
+				Notification.show("Error while searching: " + exc.getMessage(), 5000, Notification.Position.MIDDLE);
+			}
+		} catch (Exception exc) {
+			log.error("Error while searching: " + exc.getMessage());
+			Notification.show("Error while searching: " + exc.getMessage(), 5000, Notification.Position.MIDDLE);
+		}
 	}
 }
