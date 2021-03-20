@@ -15,7 +15,7 @@
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
-        <vaadin.version>14.4.9</vaadin.version>
+        <vaadin.version>14.4.4</vaadin.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -208,7 +208,7 @@
                         <artifactId>frontend-maven-plugin</artifactId>
                         <!-- Use the latest released version:
                         https://repo1.maven.org/maven2/com/github/eirslett/frontend-maven-plugin/ -->
-                        <version>1.11.2</version>
+                        <version>1.10.4</version>
                         <executions>
                             <execution>
                                 <id>install node and npm</id>
@@ -220,7 +220,7 @@
                             </execution>
                         </executions>
                         <configuration>
-                            <nodeVersion>v14.16.0</nodeVersion>
+                            <nodeVersion>v14.15.1</nodeVersion>
                         </configuration>
                     </plugin>
                 </plugins>
