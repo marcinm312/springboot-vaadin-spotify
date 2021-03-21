@@ -1,5 +1,6 @@
 package pl.marcinm312.springbootspotify.gui;
 
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Image;
@@ -16,22 +17,31 @@ import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.web.client.HttpClientErrorException;
 import pl.marcinm312.springbootspotify.service.SpotifyAlbumClient;
 import pl.marcinm312.springbootspotify.model.dto.SpotifyAlbumDto;
+import pl.marcinm312.springbootspotify.utils.SessionUtils;
 
 import java.util.List;
 
 @Route("")
 public class SearchGui extends VerticalLayout {
 
+	Button logoutButton;
 	TextField searchTextField;
 	Button searchButton;
 	Grid<SpotifyAlbumDto> albumDtoGrid;
 
+	private final SessionUtils sessionUtils;
+
 	private final org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
 	@Autowired
-	public SearchGui(SpotifyAlbumClient spotifyAlbumClient) {
+	public SearchGui(SpotifyAlbumClient spotifyAlbumClient, SessionUtils sessionUtils) {
+		this.sessionUtils = sessionUtils;
+
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		OAuth2Authentication details = (OAuth2Authentication) authentication;
+
+		logoutButton = new Button("Log out");
+		logoutButton.addClickListener(event -> logoutAction(true));
 
 		searchTextField = new TextField();
 		searchTextField.setLabel("Artist or track name:");
@@ -48,7 +58,7 @@ public class SearchGui extends VerticalLayout {
 		searchButton = new Button("Search!");
 		searchButton.addClickListener(event -> searchButtonClickEvent(spotifyAlbumClient, details));
 
-		add(searchTextField, searchButton, albumDtoGrid);
+		add(logoutButton, searchTextField, searchButton, albumDtoGrid);
 	}
 
 	private void searchButtonClickEvent(SpotifyAlbumClient spotifyAlbumClient, OAuth2Authentication details) {
@@ -62,13 +72,22 @@ public class SearchGui extends VerticalLayout {
 		} catch (HttpClientErrorException exc) {
 			log.error("Error while searching: " + exc.getMessage());
 			if ("Unauthorized".equals(exc.getStatusText())) {
-				Notification.show("Session expired. Reload webpage", 5000, Notification.Position.MIDDLE);
+				logoutAction(false);
 			} else {
 				Notification.show("Error while searching: " + exc.getMessage(), 5000, Notification.Position.MIDDLE);
 			}
 		} catch (Exception exc) {
 			log.error("Error while searching: " + exc.getMessage());
 			Notification.show("Error while searching: " + exc.getMessage(), 5000, Notification.Position.MIDDLE);
+		}
+	}
+
+	private void logoutAction(boolean withRedirect) {
+		sessionUtils.expireCurrentSession();
+		if (withRedirect) {
+			UI.getCurrent().navigate("log-out/");
+		} else {
+			UI.getCurrent().getPage().reload();
 		}
 	}
 }
