@@ -14,7 +14,9 @@ public class AfterLogoutGui extends VerticalLayout {
 	public AfterLogoutGui() {
 
 		h1 = new H1("You have been logged out");
+
 		anchor = new Anchor("..", "Go back to the application");
+		anchor.setTarget("_top");
 
 		add(h1, anchor);
 	}
