@@ -29,10 +29,10 @@ public class SpotifyAlbumClient {
 		}
 
 		String jwt = ((OAuth2AuthenticationDetails) details.getDetails()).getTokenValue();
-		log.info("user=" + details.getName());
+		log.info("user={}", details.getName());
 
 		ResponseEntity<SpotifyAlbum> exchange = getSpotifyAlbumResponseEntity(authorName, jwt);
-		log.info("status=" + exchange.getStatusCode());
+		log.info("status={}", exchange.getStatusCode());
 
 		SpotifyAlbum spotifyAlbum = exchange.getBody();
 
@@ -53,7 +53,7 @@ public class SpotifyAlbumClient {
 		HttpEntity<Object> httpEntity = new HttpEntity<>(httpHeaders);
 
 		String url = "https://api.spotify.com/v1/search?q=" + authorName + "&type=track&market=PL&limit=50&offset=0";
-		log.info("url=" + url);
+		log.info("url={}", url);
 
 		return restTemplate.exchange(
 				url,

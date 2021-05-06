@@ -29,9 +29,9 @@ public class SearchGui extends VerticalLayout {
 	Button searchButton;
 	Grid<SpotifyAlbumDto> albumDtoGrid;
 
-	private final SessionUtils sessionUtils;
+	private final transient SessionUtils sessionUtils;
 
-	private final org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
+	private final transient org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
 	@Autowired
 	public SearchGui(SpotifyAlbumClient spotifyAlbumClient, SessionUtils sessionUtils) {
@@ -64,20 +64,20 @@ public class SearchGui extends VerticalLayout {
 	private void searchButtonClickEvent(SpotifyAlbumClient spotifyAlbumClient, OAuth2Authentication details) {
 		log.info("----------------------------------------");
 		String searchValue = searchTextField.getValue().toLowerCase();
-		log.info("searchValue=" + searchValue);
+		log.info("searchValue={}", searchValue);
 		try {
 			List<SpotifyAlbumDto> albumList = spotifyAlbumClient.getAlbumsByAuthor(details, searchValue);
-			log.info("albumList.size()=" + albumList.size());
+			log.info("albumList.size()={}", albumList.size());
 			albumDtoGrid.setItems(albumList);
 		} catch (HttpClientErrorException exc) {
-			log.error("Error while searching: " + exc.getMessage());
+			log.error("Error while searching: {}", exc.getMessage());
 			if ("Unauthorized".equals(exc.getStatusText())) {
 				logoutAction(false);
 			} else {
 				Notification.show("Error while searching: " + exc.getMessage(), 5000, Notification.Position.MIDDLE);
 			}
 		} catch (Exception exc) {
-			log.error("Error while searching: " + exc.getMessage());
+			log.error("Error while searching: {}", exc.getMessage());
 			Notification.show("Error while searching: " + exc.getMessage(), 5000, Notification.Position.MIDDLE);
 		}
 	}
