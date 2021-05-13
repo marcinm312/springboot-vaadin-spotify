@@ -38,7 +38,7 @@ public class Tracks {
     @JsonProperty("total")
     private Integer total;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private final Map<String, Object> additionalProperties = new HashMap<>();
 
     @JsonProperty("href")
     public String getHref() {
