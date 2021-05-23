@@ -29,12 +29,15 @@ public class SearchGui extends VerticalLayout {
 	Button searchButton;
 	Grid<SpotifyAlbumDto> albumDtoGrid;
 
+	private final transient SpotifyAlbumClient spotifyAlbumClient;
 	private final transient SessionUtils sessionUtils;
 
 	private final transient org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
 	@Autowired
 	public SearchGui(SpotifyAlbumClient spotifyAlbumClient, SessionUtils sessionUtils) {
+
+		this.spotifyAlbumClient = spotifyAlbumClient;
 		this.sessionUtils = sessionUtils;
 
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -56,12 +59,12 @@ public class SearchGui extends VerticalLayout {
 		albumDtoGrid.setHeightByRows(true);
 
 		searchButton = new Button("Search!");
-		searchButton.addClickListener(event -> searchButtonClickEvent(spotifyAlbumClient, details));
+		searchButton.addClickListener(event -> searchButtonClickEvent(details));
 
 		add(logoutButton, searchTextField, searchButton, albumDtoGrid);
 	}
 
-	private void searchButtonClickEvent(SpotifyAlbumClient spotifyAlbumClient, OAuth2Authentication details) {
+	private void searchButtonClickEvent(OAuth2Authentication details) {
 		log.info("----------------------------------------");
 		String searchValue = searchTextField.getValue().toLowerCase();
 		log.info("searchValue={}", searchValue);
@@ -74,11 +77,11 @@ public class SearchGui extends VerticalLayout {
 			if ("Unauthorized".equals(exc.getStatusText())) {
 				logoutAction(false);
 			} else {
-				Notification.show("Error while searching: " + exc.getMessage(), 5000, Notification.Position.MIDDLE);
+				showNotification("Error while searching: " + exc.getMessage());
 			}
 		} catch (Exception exc) {
 			log.error("Error while searching: {}", exc.getMessage());
-			Notification.show("Error while searching: " + exc.getMessage(), 5000, Notification.Position.MIDDLE);
+			showNotification("Error while searching: " + exc.getMessage());
 		}
 	}
 
@@ -89,5 +92,9 @@ public class SearchGui extends VerticalLayout {
 		} else {
 			UI.getCurrent().getPage().reload();
 		}
+	}
+
+	private void showNotification(String notificationText) {
+		Notification.show(notificationText, 5000, Notification.Position.MIDDLE);
 	}
 }
