@@ -87,6 +87,10 @@ public class SearchGui extends VerticalLayout {
 
 	private void logoutAction(boolean withRedirect) {
 		sessionUtils.expireCurrentSession();
+		navigateOrReload(withRedirect);
+	}
+
+	void navigateOrReload(boolean withRedirect) {
 		if (withRedirect) {
 			UI.getCurrent().navigate("log-out/");
 		} else {
@@ -94,7 +98,7 @@ public class SearchGui extends VerticalLayout {
 		}
 	}
 
-	private void showNotification(String notificationText) {
+	void showNotification(String notificationText) {
 		Notification.show(notificationText, 5000, Notification.Position.MIDDLE);
 	}
 }

@@ -2,6 +2,7 @@ package pl.marcinm312.springbootspotify.service;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -20,6 +21,13 @@ import java.util.stream.Collectors;
 @Service
 public class SpotifyAlbumClient {
 
+	private final RestTemplate restTemplate;
+
+	@Autowired
+	public SpotifyAlbumClient(RestTemplate restTemplate) {
+		this.restTemplate = restTemplate;
+	}
+
 	private final org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
 	public List<SpotifyAlbumDto> getAlbumsByAuthor(OAuth2Authentication details, String authorName) {
@@ -28,8 +36,11 @@ public class SpotifyAlbumClient {
 			return new ArrayList<>();
 		}
 
-		String jwt = ((OAuth2AuthenticationDetails) details.getDetails()).getTokenValue();
-		log.info("user={}", details.getName());
+		String jwt = null;
+		if (details != null) {
+			jwt = ((OAuth2AuthenticationDetails) details.getDetails()).getTokenValue();
+			log.info("user={}", details.getName());
+		}
 
 		ResponseEntity<SpotifyAlbum> exchange = getSpotifyAlbumResponseEntity(authorName, jwt);
 		log.info("status={}", exchange.getStatusCode());
@@ -47,9 +58,10 @@ public class SpotifyAlbumClient {
 	}
 
 	private ResponseEntity<SpotifyAlbum> getSpotifyAlbumResponseEntity(String authorName, String jwt) {
-		RestTemplate restTemplate = new RestTemplate();
 		HttpHeaders httpHeaders = new HttpHeaders();
-		httpHeaders.add("Authorization", "Bearer " + jwt);
+		if (jwt != null) {
+			httpHeaders.add("Authorization", "Bearer " + jwt);
+		}
 		HttpEntity<Object> httpEntity = new HttpEntity<>(httpHeaders);
 
 		String url = "https://api.spotify.com/v1/search?q=" + authorName + "&type=track&market=PL&limit=50&offset=0";

@@ -1,0 +1,3442 @@
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=krzysztof+krawczyk&type=track&market=PL&offset=0&limit=50",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3lKMPkMqUCgqZErT2KWDVt"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3lKMPkMqUCgqZErT2KWDVt",
+        "id" : "3lKMPkMqUCgqZErT2KWDVt",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273d91a4b89cfe93d138411a49f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02d91a4b89cfe93d138411a49f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851d91a4b89cfe93d138411a49f",
+          "width" : 64
+        } ],
+        "name" : "Concert Hits",
+        "release_date" : "2019-03-20",
+        "release_date_precision" : "day",
+        "total_tracks" : 18,
+        "type" : "album",
+        "uri" : "spotify:album:3lKMPkMqUCgqZErT2KWDVt"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 221405,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941800014"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/12COJ7VGvO7DrXCwD1Oelc"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/12COJ7VGvO7DrXCwD1Oelc",
+      "id" : "12COJ7VGvO7DrXCwD1Oelc",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Chciałem być (Version 2018)",
+      "popularity" : 55,
+      "preview_url" : "https://p.scdn.co/mp3-preview/7f597e1bd4c1de1bce72ae9b618287c29b648f66?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:12COJ7VGvO7DrXCwD1Oelc"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ubxdOP13B5rWDTeEHPw1t"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ubxdOP13B5rWDTeEHPw1t",
+        "id" : "2ubxdOP13B5rWDTeEHPw1t",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27331777b84f24199a0d375f02e",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0231777b84f24199a0d375f02e",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485131777b84f24199a0d375f02e",
+          "width" : 64
+        } ],
+        "name" : "Duety",
+        "release_date" : "2016-11-04",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:2ubxdOP13B5rWDTeEHPw1t"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1MrKvFb6ie6bTXGpSEYx0g"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1MrKvFb6ie6bTXGpSEYx0g",
+        "id" : "1MrKvFb6ie6bTXGpSEYx0g",
+        "name" : "Edyta Bartosiewicz",
+        "type" : "artist",
+        "uri" : "spotify:artist:1MrKvFb6ie6bTXGpSEYx0g"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 263853,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLA320400032"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2XaWRFfWAopw4MjhWzuJ15"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2XaWRFfWAopw4MjhWzuJ15",
+      "id" : "2XaWRFfWAopw4MjhWzuJ15",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Trudno Tak (Razem Byc Nam Ze Soba)",
+      "popularity" : 54,
+      "preview_url" : "https://p.scdn.co/mp3-preview/811d768a050353474abed9c358964699e5fdcbdb?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:2XaWRFfWAopw4MjhWzuJ15"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5WeGsNTrB3Sm4jzikO5wKU"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5WeGsNTrB3Sm4jzikO5wKU",
+        "id" : "5WeGsNTrB3Sm4jzikO5wKU",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273db800afa776e04477573d500",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02db800afa776e04477573d500",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851db800afa776e04477573d500",
+          "width" : 64
+        } ],
+        "name" : "Top Love Hits",
+        "release_date" : "2017-08-04",
+        "release_date_precision" : "day",
+        "total_tracks" : 18,
+        "type" : "album",
+        "uri" : "spotify:album:5WeGsNTrB3Sm4jzikO5wKU"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 190240,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLA330201107"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4iw1izjwJgdHPZdumrHvyN"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4iw1izjwJgdHPZdumrHvyN",
+      "id" : "4iw1izjwJgdHPZdumrHvyN",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Bo Jestes Ty",
+      "popularity" : 52,
+      "preview_url" : "https://p.scdn.co/mp3-preview/27f1feecf352c025c2b0a33e2725616f908726e4?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 15,
+      "type" : "track",
+      "uri" : "spotify:track:4iw1izjwJgdHPZdumrHvyN"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3lKMPkMqUCgqZErT2KWDVt"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3lKMPkMqUCgqZErT2KWDVt",
+        "id" : "3lKMPkMqUCgqZErT2KWDVt",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273d91a4b89cfe93d138411a49f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02d91a4b89cfe93d138411a49f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851d91a4b89cfe93d138411a49f",
+          "width" : 64
+        } ],
+        "name" : "Concert Hits",
+        "release_date" : "2019-03-20",
+        "release_date_precision" : "day",
+        "total_tracks" : 18,
+        "type" : "album",
+        "uri" : "spotify:album:3lKMPkMqUCgqZErT2KWDVt"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 178862,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941201352"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1X60z5rwi3IkF5wVtmyjZY"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1X60z5rwi3IkF5wVtmyjZY",
+      "id" : "1X60z5rwi3IkF5wVtmyjZY",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Parostatek",
+      "popularity" : 51,
+      "preview_url" : "https://p.scdn.co/mp3-preview/0811578f7428dfeaa9f361a25d0bdf31e2e28ff2?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:1X60z5rwi3IkF5wVtmyjZY"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2GQm7ehPlJYfdgSTqYAjLW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2GQm7ehPlJYfdgSTqYAjLW",
+        "id" : "2GQm7ehPlJYfdgSTqYAjLW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273beb77075528af3975de3b43d",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02beb77075528af3975de3b43d",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851beb77075528af3975de3b43d",
+          "width" : 64
+        } ],
+        "name" : "A kiedy bedziesz moja zona / Album weselny (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2012-01-01",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:2GQm7ehPlJYfdgSTqYAjLW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 239852,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200494"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0HN5AAJSJ2meD6MMY0hQgu"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0HN5AAJSJ2meD6MMY0hQgu",
+      "id" : "0HN5AAJSJ2meD6MMY0hQgu",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Za Toba pojde jak na bal",
+      "popularity" : 51,
+      "preview_url" : "https://p.scdn.co/mp3-preview/c5b98b8aec017639180d7f0ffb6a1e0738883636?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:0HN5AAJSJ2meD6MMY0hQgu"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3lKMPkMqUCgqZErT2KWDVt"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3lKMPkMqUCgqZErT2KWDVt",
+        "id" : "3lKMPkMqUCgqZErT2KWDVt",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273d91a4b89cfe93d138411a49f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02d91a4b89cfe93d138411a49f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851d91a4b89cfe93d138411a49f",
+          "width" : 64
+        } ],
+        "name" : "Concert Hits",
+        "release_date" : "2019-03-20",
+        "release_date_precision" : "day",
+        "total_tracks" : 18,
+        "type" : "album",
+        "uri" : "spotify:album:3lKMPkMqUCgqZErT2KWDVt"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 177311,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941201356"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3YbMZaDQeCSJ79vFvo6u3Y"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3YbMZaDQeCSJ79vFvo6u3Y",
+      "id" : "3YbMZaDQeCSJ79vFvo6u3Y",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Mój Przyjacielu (Version 2011)",
+      "popularity" : 47,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e1d3588ab1bf4ac6b0629e6f283920ca706618ac?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:3YbMZaDQeCSJ79vFvo6u3Y"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/08vJAYLLf2CnL6AHUHiOpa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/08vJAYLLf2CnL6AHUHiOpa",
+        "id" : "08vJAYLLf2CnL6AHUHiOpa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2733e65e544738c274e111b6507",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e023e65e544738c274e111b6507",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048513e65e544738c274e111b6507",
+          "width" : 64
+        } ],
+        "name" : "My Cyganie (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2004-01-15",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:08vJAYLLf2CnL6AHUHiOpa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 199013,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200656"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0zqFMyTH1Wr4T4ZUCTVi13"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0zqFMyTH1Wr4T4ZUCTVi13",
+      "id" : "0zqFMyTH1Wr4T4ZUCTVi13",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "My Cyganie",
+      "popularity" : 47,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b63341cb1ba4aaf193d77e9defdb4f17c5955ef2?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:0zqFMyTH1Wr4T4ZUCTVi13"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2GQm7ehPlJYfdgSTqYAjLW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2GQm7ehPlJYfdgSTqYAjLW",
+        "id" : "2GQm7ehPlJYfdgSTqYAjLW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273beb77075528af3975de3b43d",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02beb77075528af3975de3b43d",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851beb77075528af3975de3b43d",
+          "width" : 64
+        } ],
+        "name" : "A kiedy bedziesz moja zona / Album weselny (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2012-01-01",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:2GQm7ehPlJYfdgSTqYAjLW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 228769,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200493"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6GRQQLCpGNYV66ZUWDrKam"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6GRQQLCpGNYV66ZUWDrKam",
+      "id" : "6GRQQLCpGNYV66ZUWDrKam",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Ostatni raz zatanczysz ze mna",
+      "popularity" : 47,
+      "preview_url" : "https://p.scdn.co/mp3-preview/998fc4011d2755d4b6a0942af483a0d55c8ddfed?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:6GRQQLCpGNYV66ZUWDrKam"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/46lqxxYV0iEY9Uo1OijiTG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/46lqxxYV0iEY9Uo1OijiTG",
+        "id" : "46lqxxYV0iEY9Uo1OijiTG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730be29b27b8a6b2c3cb5ac4b0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020be29b27b8a6b2c3cb5ac4b0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510be29b27b8a6b2c3cb5ac4b0",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of Vol.1 (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2011-04-24",
+        "release_date_precision" : "day",
+        "total_tracks" : 16,
+        "type" : "album",
+        "uri" : "spotify:album:46lqxxYV0iEY9Uo1OijiTG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 280400,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200042"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0bNsJwWXLnD0fqhRsdxNBk"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0bNsJwWXLnD0fqhRsdxNBk",
+      "id" : "0bNsJwWXLnD0fqhRsdxNBk",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "To co dal nam swiat",
+      "popularity" : 47,
+      "preview_url" : "https://p.scdn.co/mp3-preview/69b75ba522272e9fe8f187ca4aa1769eb9ad88e1?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:0bNsJwWXLnD0fqhRsdxNBk"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ubxdOP13B5rWDTeEHPw1t"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ubxdOP13B5rWDTeEHPw1t",
+        "id" : "2ubxdOP13B5rWDTeEHPw1t",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27331777b84f24199a0d375f02e",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0231777b84f24199a0d375f02e",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485131777b84f24199a0d375f02e",
+          "width" : 64
+        } ],
+        "name" : "Duety",
+        "release_date" : "2016-11-04",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:2ubxdOP13B5rWDTeEHPw1t"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/42Tlgcp92Mw3R7XJ5I7TkV"
+        },
+        "href" : "https://api.spotify.com/v1/artists/42Tlgcp92Mw3R7XJ5I7TkV",
+        "id" : "42Tlgcp92Mw3R7XJ5I7TkV",
+        "name" : "Katarzyna Nosowska",
+        "type" : "artist",
+        "uri" : "spotify:artist:42Tlgcp92Mw3R7XJ5I7TkV"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 215013,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLB381601074"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/595Osiq9Zh9HLH7ewHiNgy"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/595Osiq9Zh9HLH7ewHiNgy",
+      "id" : "595Osiq9Zh9HLH7ewHiNgy",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Bezsenni",
+      "popularity" : 44,
+      "preview_url" : "https://p.scdn.co/mp3-preview/bc1b974fdce44dd15798fb3dfd57351d82b036c5?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:595Osiq9Zh9HLH7ewHiNgy"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/46lqxxYV0iEY9Uo1OijiTG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/46lqxxYV0iEY9Uo1OijiTG",
+        "id" : "46lqxxYV0iEY9Uo1OijiTG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730be29b27b8a6b2c3cb5ac4b0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020be29b27b8a6b2c3cb5ac4b0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510be29b27b8a6b2c3cb5ac4b0",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of Vol.1 (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2011-04-24",
+        "release_date_precision" : "day",
+        "total_tracks" : 16,
+        "type" : "album",
+        "uri" : "spotify:album:46lqxxYV0iEY9Uo1OijiTG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 182080,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200038"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3ZBpWUx3VSQvd5wKXmXq4z"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3ZBpWUx3VSQvd5wKXmXq4z",
+      "id" : "3ZBpWUx3VSQvd5wKXmXq4z",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Parostatek",
+      "popularity" : 43,
+      "preview_url" : "https://p.scdn.co/mp3-preview/2a130563d19c4d5eeb042c13f8ba83c336da29c0?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:3ZBpWUx3VSQvd5wKXmXq4z"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3lKMPkMqUCgqZErT2KWDVt"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3lKMPkMqUCgqZErT2KWDVt",
+        "id" : "3lKMPkMqUCgqZErT2KWDVt",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273d91a4b89cfe93d138411a49f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02d91a4b89cfe93d138411a49f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851d91a4b89cfe93d138411a49f",
+          "width" : 64
+        } ],
+        "name" : "Concert Hits",
+        "release_date" : "2019-03-20",
+        "release_date_precision" : "day",
+        "total_tracks" : 18,
+        "type" : "album",
+        "uri" : "spotify:album:3lKMPkMqUCgqZErT2KWDVt"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 233000,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941201354"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2QAMDwSQApvRpWowDQUMVj"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2QAMDwSQApvRpWowDQUMVj",
+      "id" : "2QAMDwSQApvRpWowDQUMVj",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Byle było tak",
+      "popularity" : 43,
+      "preview_url" : "https://p.scdn.co/mp3-preview/dc4cac73d911f765e3f75112a21459d31f458ac2?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:2QAMDwSQApvRpWowDQUMVj"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/46lqxxYV0iEY9Uo1OijiTG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/46lqxxYV0iEY9Uo1OijiTG",
+        "id" : "46lqxxYV0iEY9Uo1OijiTG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730be29b27b8a6b2c3cb5ac4b0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020be29b27b8a6b2c3cb5ac4b0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510be29b27b8a6b2c3cb5ac4b0",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of Vol.1 (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2011-04-24",
+        "release_date_precision" : "day",
+        "total_tracks" : 16,
+        "type" : "album",
+        "uri" : "spotify:album:46lqxxYV0iEY9Uo1OijiTG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 331826,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200037"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1lhUZb4Y8UnMGoCnjPfUPm"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1lhUZb4Y8UnMGoCnjPfUPm",
+      "id" : "1lhUZb4Y8UnMGoCnjPfUPm",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Rysunek na szkle",
+      "popularity" : 42,
+      "preview_url" : "https://p.scdn.co/mp3-preview/a10a83b1058f7980f2c41c0033e84c911506fe86?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:1lhUZb4Y8UnMGoCnjPfUPm"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/46lqxxYV0iEY9Uo1OijiTG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/46lqxxYV0iEY9Uo1OijiTG",
+        "id" : "46lqxxYV0iEY9Uo1OijiTG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730be29b27b8a6b2c3cb5ac4b0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020be29b27b8a6b2c3cb5ac4b0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510be29b27b8a6b2c3cb5ac4b0",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of Vol.1 (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2011-04-24",
+        "release_date_precision" : "day",
+        "total_tracks" : 16,
+        "type" : "album",
+        "uri" : "spotify:album:46lqxxYV0iEY9Uo1OijiTG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 239906,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200039"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/09AREW7VQsFcafq2NhIieq"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/09AREW7VQsFcafq2NhIieq",
+      "id" : "09AREW7VQsFcafq2NhIieq",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Jak minal dzien",
+      "popularity" : 41,
+      "preview_url" : "https://p.scdn.co/mp3-preview/5e9b7ce1a5247a318d0260786cc2b3e397cae53c?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:09AREW7VQsFcafq2NhIieq"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6xLDmzyc0vVMyh14D4smo4"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6xLDmzyc0vVMyh14D4smo4",
+        "id" : "6xLDmzyc0vVMyh14D4smo4",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27335cf4175c3cd1ff8e48558b8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0235cf4175c3cd1ff8e48558b8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485135cf4175c3cd1ff8e48558b8",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of vol.2 - Other Versions (Krzysztof Krawczyk Antologia)",
+        "release_date" : "1999-01-15",
+        "release_date_precision" : "day",
+        "total_tracks" : 13,
+        "type" : "album",
+        "uri" : "spotify:album:6xLDmzyc0vVMyh14D4smo4"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 202773,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200752"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5baiEiWRG6NtkAvE7AmNg9"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5baiEiWRG6NtkAvE7AmNg9",
+      "id" : "5baiEiWRG6NtkAvE7AmNg9",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Ostatni raz zatanczysz ze mna",
+      "popularity" : 39,
+      "preview_url" : "https://p.scdn.co/mp3-preview/1fd6bb1792d4c5fe2b45a6d8aecc5be617e48b2e?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:5baiEiWRG6NtkAvE7AmNg9"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ubxdOP13B5rWDTeEHPw1t"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ubxdOP13B5rWDTeEHPw1t",
+        "id" : "2ubxdOP13B5rWDTeEHPw1t",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27331777b84f24199a0d375f02e",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0231777b84f24199a0d375f02e",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485131777b84f24199a0d375f02e",
+          "width" : 64
+        } ],
+        "name" : "Duety",
+        "release_date" : "2016-11-04",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:2ubxdOP13B5rWDTeEHPw1t"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3sYr49vFJ6BPZnV5Ky1PLH"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3sYr49vFJ6BPZnV5Ky1PLH",
+        "id" : "3sYr49vFJ6BPZnV5Ky1PLH",
+        "name" : "Andrzej Piaseczny",
+        "type" : "artist",
+        "uri" : "spotify:artist:3sYr49vFJ6BPZnV5Ky1PLH"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 203213,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLA330400207"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2qKOyMIhaPsB6xGoemqItA"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2qKOyMIhaPsB6xGoemqItA",
+      "id" : "2qKOyMIhaPsB6xGoemqItA",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Przytul Mnie Zycie (feat. Krzysztof Krawczyk)",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b2b192fcfbd2a31276be8005ac32533a691b78a1?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:2qKOyMIhaPsB6xGoemqItA"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6xLDmzyc0vVMyh14D4smo4"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6xLDmzyc0vVMyh14D4smo4",
+        "id" : "6xLDmzyc0vVMyh14D4smo4",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27335cf4175c3cd1ff8e48558b8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0235cf4175c3cd1ff8e48558b8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485135cf4175c3cd1ff8e48558b8",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of vol.2 - Other Versions (Krzysztof Krawczyk Antologia)",
+        "release_date" : "1999-01-15",
+        "release_date_precision" : "day",
+        "total_tracks" : 13,
+        "type" : "album",
+        "uri" : "spotify:album:6xLDmzyc0vVMyh14D4smo4"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 264826,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200758"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/02Bm42WaYZF7gTshH07y9C"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/02Bm42WaYZF7gTshH07y9C",
+      "id" : "02Bm42WaYZF7gTshH07y9C",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Barka",
+      "popularity" : 39,
+      "preview_url" : "https://p.scdn.co/mp3-preview/41589303e4e3d4f98a6a783271776fc1e7a013e0?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 13,
+      "type" : "track",
+      "uri" : "spotify:track:02Bm42WaYZF7gTshH07y9C"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/46lqxxYV0iEY9Uo1OijiTG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/46lqxxYV0iEY9Uo1OijiTG",
+        "id" : "46lqxxYV0iEY9Uo1OijiTG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730be29b27b8a6b2c3cb5ac4b0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020be29b27b8a6b2c3cb5ac4b0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510be29b27b8a6b2c3cb5ac4b0",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of Vol.1 (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2011-04-24",
+        "release_date_precision" : "day",
+        "total_tracks" : 16,
+        "type" : "album",
+        "uri" : "spotify:album:46lqxxYV0iEY9Uo1OijiTG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 255146,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200040"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/72aL3G7P0f6qCpghcxmL25"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/72aL3G7P0f6qCpghcxmL25",
+      "id" : "72aL3G7P0f6qCpghcxmL25",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Pamietam Ciebie z tamtych lat",
+      "popularity" : 39,
+      "preview_url" : "https://p.scdn.co/mp3-preview/026ba06cd2f308beffe37283f8c194c41cabde57?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:72aL3G7P0f6qCpghcxmL25"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3lKMPkMqUCgqZErT2KWDVt"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3lKMPkMqUCgqZErT2KWDVt",
+        "id" : "3lKMPkMqUCgqZErT2KWDVt",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273d91a4b89cfe93d138411a49f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02d91a4b89cfe93d138411a49f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851d91a4b89cfe93d138411a49f",
+          "width" : 64
+        } ],
+        "name" : "Concert Hits",
+        "release_date" : "2019-03-20",
+        "release_date_precision" : "day",
+        "total_tracks" : 18,
+        "type" : "album",
+        "uri" : "spotify:album:3lKMPkMqUCgqZErT2KWDVt"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 199560,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941800015"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/62TFndXQioKAWAHe5E3OgK"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/62TFndXQioKAWAHe5E3OgK",
+      "id" : "62TFndXQioKAWAHe5E3OgK",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Tylko Ty, tylko ja - ze sobą I dla siebie (Version 2018)",
+      "popularity" : 39,
+      "preview_url" : "https://p.scdn.co/mp3-preview/408ba30b8c7cb80ea963e23a230723e9d6958af7?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:62TFndXQioKAWAHe5E3OgK"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2hphoIcqQpJBunp4QHe8jF"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2hphoIcqQpJBunp4QHe8jF",
+        "id" : "2hphoIcqQpJBunp4QHe8jF",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2733618b6866aa0d9be26553c92",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e023618b6866aa0d9be26553c92",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048513618b6866aa0d9be26553c92",
+          "width" : 64
+        } ],
+        "name" : "Piosenki biesiadne vol.2 (Krzysztof Krawczyk Antologia)",
+        "release_date" : "1999-02-15",
+        "release_date_precision" : "day",
+        "total_tracks" : 10,
+        "type" : "album",
+        "uri" : "spotify:album:2hphoIcqQpJBunp4QHe8jF"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 252200,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200447"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7llwwDHiPOBRq21RVVo4Nl"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7llwwDHiPOBRq21RVVo4Nl",
+      "id" : "7llwwDHiPOBRq21RVVo4Nl",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Hej, sokoly!",
+      "popularity" : 39,
+      "preview_url" : "https://p.scdn.co/mp3-preview/c8b26869cce715e55966a30157eaf404d4efc246?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:7llwwDHiPOBRq21RVVo4Nl"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/46lqxxYV0iEY9Uo1OijiTG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/46lqxxYV0iEY9Uo1OijiTG",
+        "id" : "46lqxxYV0iEY9Uo1OijiTG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730be29b27b8a6b2c3cb5ac4b0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020be29b27b8a6b2c3cb5ac4b0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510be29b27b8a6b2c3cb5ac4b0",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of Vol.1 (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2011-04-24",
+        "release_date_precision" : "day",
+        "total_tracks" : 16,
+        "type" : "album",
+        "uri" : "spotify:album:46lqxxYV0iEY9Uo1OijiTG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 242106,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200046"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1SxVKKZQRvRJnJNgVbv0CP"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1SxVKKZQRvRJnJNgVbv0CP",
+      "id" : "1SxVKKZQRvRJnJNgVbv0CP",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Za Toba pojde jak na bal",
+      "popularity" : 38,
+      "preview_url" : "https://p.scdn.co/mp3-preview/dd615fdc2dd2b789067a9899934211d618a7d418?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 14,
+      "type" : "track",
+      "uri" : "spotify:track:1SxVKKZQRvRJnJNgVbv0CP"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/08vJAYLLf2CnL6AHUHiOpa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/08vJAYLLf2CnL6AHUHiOpa",
+        "id" : "08vJAYLLf2CnL6AHUHiOpa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2733e65e544738c274e111b6507",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e023e65e544738c274e111b6507",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048513e65e544738c274e111b6507",
+          "width" : 64
+        } ],
+        "name" : "My Cyganie (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2004-01-15",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:08vJAYLLf2CnL6AHUHiOpa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 223053,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200661"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/72p5f76w0cTiVqMFDSOVt5"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/72p5f76w0cTiVqMFDSOVt5",
+      "id" : "72p5f76w0cTiVqMFDSOVt5",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "A wszystko te czarne oczy",
+      "popularity" : 38,
+      "preview_url" : "https://p.scdn.co/mp3-preview/92ee0ded993af3e5af6bb08ae309a71778132f40?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:72p5f76w0cTiVqMFDSOVt5"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/08vJAYLLf2CnL6AHUHiOpa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/08vJAYLLf2CnL6AHUHiOpa",
+        "id" : "08vJAYLLf2CnL6AHUHiOpa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2733e65e544738c274e111b6507",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e023e65e544738c274e111b6507",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048513e65e544738c274e111b6507",
+          "width" : 64
+        } ],
+        "name" : "My Cyganie (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2004-01-15",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:08vJAYLLf2CnL6AHUHiOpa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 209413,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200658"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5tluGX6uozKBLb1BwX6y7E"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5tluGX6uozKBLb1BwX6y7E",
+      "id" : "5tluGX6uozKBLb1BwX6y7E",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Cyganeczka Zosia",
+      "popularity" : 38,
+      "preview_url" : "https://p.scdn.co/mp3-preview/ad8047f675f0fc8772367a23f0249d63ca130681?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:5tluGX6uozKBLb1BwX6y7E"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/46lqxxYV0iEY9Uo1OijiTG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/46lqxxYV0iEY9Uo1OijiTG",
+        "id" : "46lqxxYV0iEY9Uo1OijiTG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730be29b27b8a6b2c3cb5ac4b0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020be29b27b8a6b2c3cb5ac4b0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510be29b27b8a6b2c3cb5ac4b0",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of Vol.1 (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2011-04-24",
+        "release_date_precision" : "day",
+        "total_tracks" : 16,
+        "type" : "album",
+        "uri" : "spotify:album:46lqxxYV0iEY9Uo1OijiTG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 232333,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200044"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4Xhe9iqKJbgG3nL9rQGAVS"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4Xhe9iqKJbgG3nL9rQGAVS",
+      "id" : "4Xhe9iqKJbgG3nL9rQGAVS",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Ostatni raz zatanczysz ze mna",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8314e234d54a487d7a6f007ea8aede4ffeecd7ee?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 12,
+      "type" : "track",
+      "uri" : "spotify:track:4Xhe9iqKJbgG3nL9rQGAVS"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7DEffKTF8f84pMWzGdCkYz"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7DEffKTF8f84pMWzGdCkYz",
+        "id" : "7DEffKTF8f84pMWzGdCkYz",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730f8818875b97bdcf1c860981",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020f8818875b97bdcf1c860981",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510f8818875b97bdcf1c860981",
+          "width" : 64
+        } ],
+        "name" : "Zycie jak wino (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2007-10-01",
+        "release_date_precision" : "day",
+        "total_tracks" : 16,
+        "type" : "album",
+        "uri" : "spotify:album:7DEffKTF8f84pMWzGdCkYz"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 206573,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200241"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2ekdTLB3J7XoS7K7LkzfWG"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2ekdTLB3J7XoS7K7LkzfWG",
+      "id" : "2ekdTLB3J7XoS7K7LkzfWG",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Zycie jak wino",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/545b9580ccefdafb74325a04a74e2f24ac673618?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:2ekdTLB3J7XoS7K7LkzfWG"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3lKMPkMqUCgqZErT2KWDVt"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3lKMPkMqUCgqZErT2KWDVt",
+        "id" : "3lKMPkMqUCgqZErT2KWDVt",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273d91a4b89cfe93d138411a49f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02d91a4b89cfe93d138411a49f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851d91a4b89cfe93d138411a49f",
+          "width" : 64
+        } ],
+        "name" : "Concert Hits",
+        "release_date" : "2019-03-20",
+        "release_date_precision" : "day",
+        "total_tracks" : 18,
+        "type" : "album",
+        "uri" : "spotify:album:3lKMPkMqUCgqZErT2KWDVt"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 197619,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941201355"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3jFYPJhT4kgZyEaBDLDWwV"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3jFYPJhT4kgZyEaBDLDWwV",
+      "id" : "3jFYPJhT4kgZyEaBDLDWwV",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Gdy nam śpiewał Elvis Presley",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/3985f2d52ccba8225b85ddd13ef30c3b4a1f93ec?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:3jFYPJhT4kgZyEaBDLDWwV"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5oulim0GeF4dhgNW4wVIRW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5oulim0GeF4dhgNW4wVIRW",
+        "id" : "5oulim0GeF4dhgNW4wVIRW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730e44163ee6f46dca322b7ff2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020e44163ee6f46dca322b7ff2",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510e44163ee6f46dca322b7ff2",
+          "width" : 64
+        } ],
+        "name" : "Horyzont",
+        "release_date" : "2020-10-23",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:5oulim0GeF4dhgNW4wVIRW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 284933,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG942000008"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1U50scIVwRxXui6HDE2b02"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1U50scIVwRxXui6HDE2b02",
+      "id" : "1U50scIVwRxXui6HDE2b02",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Wtedy przy mnie bądź",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/a09367b72c319691782373d89273302bf5f48d1f?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:1U50scIVwRxXui6HDE2b02"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0ugW24VQj7WVTYI4iB77Qi"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0ugW24VQj7WVTYI4iB77Qi",
+        "id" : "0ugW24VQj7WVTYI4iB77Qi",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27376d832eac4203ec0fb7c7152",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0276d832eac4203ec0fb7c7152",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485176d832eac4203ec0fb7c7152",
+          "width" : 64
+        } ],
+        "name" : "Rysunek na szkle (The Best)",
+        "release_date" : "2004-01-29",
+        "release_date_precision" : "day",
+        "total_tracks" : 16,
+        "type" : "album",
+        "uri" : "spotify:album:0ugW24VQj7WVTYI4iB77Qi"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 251186,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLB170702139"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4gZQWuaRBFhga9OxDEdkXo"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4gZQWuaRBFhga9OxDEdkXo",
+      "id" : "4gZQWuaRBFhga9OxDEdkXo",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "To co dał nam świat",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/3cda5016153b22043e9fe757d5273b9e288b6e09?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 12,
+      "type" : "track",
+      "uri" : "spotify:track:4gZQWuaRBFhga9OxDEdkXo"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/46lqxxYV0iEY9Uo1OijiTG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/46lqxxYV0iEY9Uo1OijiTG",
+        "id" : "46lqxxYV0iEY9Uo1OijiTG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730be29b27b8a6b2c3cb5ac4b0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020be29b27b8a6b2c3cb5ac4b0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510be29b27b8a6b2c3cb5ac4b0",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of Vol.1 (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2011-04-24",
+        "release_date_precision" : "day",
+        "total_tracks" : 16,
+        "type" : "album",
+        "uri" : "spotify:album:46lqxxYV0iEY9Uo1OijiTG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 258440,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200045"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0taCSTquJQduMZSmS5Wyaw"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0taCSTquJQduMZSmS5Wyaw",
+      "id" : "0taCSTquJQduMZSmS5Wyaw",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Nie zostalo nam juz nic",
+      "popularity" : 36,
+      "preview_url" : "https://p.scdn.co/mp3-preview/6deab0d95ee07659c6b5ce315b6eae3114cb26ec?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 13,
+      "type" : "track",
+      "uri" : "spotify:track:0taCSTquJQduMZSmS5Wyaw"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0jQY6F4tejwtgt8pnUiASG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0jQY6F4tejwtgt8pnUiASG",
+        "id" : "0jQY6F4tejwtgt8pnUiASG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27313e32a0c9a8e55d27c982a52",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0213e32a0c9a8e55d27c982a52",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485113e32a0c9a8e55d27c982a52",
+          "width" : 64
+        } ],
+        "name" : "Alex Band Aleksander Maliszewski - Światowe Przeboje 80",
+        "release_date" : "2014-04-23",
+        "release_date_precision" : "day",
+        "total_tracks" : 18,
+        "type" : "album",
+        "uri" : "spotify:album:0jQY6F4tejwtgt8pnUiASG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1ddtWYSnFmvgfGomqNCQAT"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1ddtWYSnFmvgfGomqNCQAT",
+        "id" : "1ddtWYSnFmvgfGomqNCQAT",
+        "name" : "Bogdan Smoleń",
+        "type" : "artist",
+        "uri" : "spotify:artist:1ddtWYSnFmvgfGomqNCQAT"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 214000,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLI531400079"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2jStmaJoTwOLpvstgM6bVH"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2jStmaJoTwOLpvstgM6bVH",
+      "id" : "2jStmaJoTwOLpvstgM6bVH",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Dziewczyny, Które Mam Na Myśli",
+      "popularity" : 36,
+      "preview_url" : "https://p.scdn.co/mp3-preview/d88ce231b47f5eafda50700ca35d5fc293864c99?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:2jStmaJoTwOLpvstgM6bVH"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2GQm7ehPlJYfdgSTqYAjLW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2GQm7ehPlJYfdgSTqYAjLW",
+        "id" : "2GQm7ehPlJYfdgSTqYAjLW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273beb77075528af3975de3b43d",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02beb77075528af3975de3b43d",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851beb77075528af3975de3b43d",
+          "width" : 64
+        } ],
+        "name" : "A kiedy bedziesz moja zona / Album weselny (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2012-01-01",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:2GQm7ehPlJYfdgSTqYAjLW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 194810,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200491"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1cSa9P2BP2nNRFdOkZldfd"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1cSa9P2BP2nNRFdOkZldfd",
+      "id" : "1cSa9P2BP2nNRFdOkZldfd",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Bo jestes Ty (version 2012)",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/04a7cc14488527b9a348eab5f6dc17e7ce79f468?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:1cSa9P2BP2nNRFdOkZldfd"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5oulim0GeF4dhgNW4wVIRW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5oulim0GeF4dhgNW4wVIRW",
+        "id" : "5oulim0GeF4dhgNW4wVIRW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730e44163ee6f46dca322b7ff2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020e44163ee6f46dca322b7ff2",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510e44163ee6f46dca322b7ff2",
+          "width" : 64
+        } ],
+        "name" : "Horyzont",
+        "release_date" : "2020-10-23",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:5oulim0GeF4dhgNW4wVIRW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 225626,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG942000007"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6UW0voYCevwjjmIVXNUxQK"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6UW0voYCevwjjmIVXNUxQK",
+      "id" : "6UW0voYCevwjjmIVXNUxQK",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Horyzont",
+      "popularity" : 36,
+      "preview_url" : "https://p.scdn.co/mp3-preview/9fa5b71bb89c8044cb301208cdbd87d74da1c351?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:6UW0voYCevwjjmIVXNUxQK"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ubxdOP13B5rWDTeEHPw1t"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ubxdOP13B5rWDTeEHPw1t",
+        "id" : "2ubxdOP13B5rWDTeEHPw1t",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27331777b84f24199a0d375f02e",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0231777b84f24199a0d375f02e",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485131777b84f24199a0d375f02e",
+          "width" : 64
+        } ],
+        "name" : "Duety",
+        "release_date" : "2016-11-04",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:2ubxdOP13B5rWDTeEHPw1t"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/10JL3Itycb70lP4ZIA6qjp"
+        },
+        "href" : "https://api.spotify.com/v1/artists/10JL3Itycb70lP4ZIA6qjp",
+        "id" : "10JL3Itycb70lP4ZIA6qjp",
+        "name" : "Muniek Staszczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:10JL3Itycb70lP4ZIA6qjp"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 195173,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLA320400029"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2cQJ3xECfjrqwGAfys7hE7"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2cQJ3xECfjrqwGAfys7hE7",
+      "id" : "2cQJ3xECfjrqwGAfys7hE7",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Lekarze Dusz",
+      "popularity" : 36,
+      "preview_url" : "https://p.scdn.co/mp3-preview/9f20515c8a019d71c2967b73ac08cab8d0ba77a0?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:2cQJ3xECfjrqwGAfys7hE7"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/46lqxxYV0iEY9Uo1OijiTG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/46lqxxYV0iEY9Uo1OijiTG",
+        "id" : "46lqxxYV0iEY9Uo1OijiTG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730be29b27b8a6b2c3cb5ac4b0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020be29b27b8a6b2c3cb5ac4b0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510be29b27b8a6b2c3cb5ac4b0",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of Vol.1 (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2011-04-24",
+        "release_date_precision" : "day",
+        "total_tracks" : 16,
+        "type" : "album",
+        "uri" : "spotify:album:46lqxxYV0iEY9Uo1OijiTG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 269786,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200043"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0Bb2qlcAbZqp70WYv0TV3Z"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0Bb2qlcAbZqp70WYv0TV3Z",
+      "id" : "0Bb2qlcAbZqp70WYv0TV3Z",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Zycia mala garsc",
+      "popularity" : 35,
+      "preview_url" : "https://p.scdn.co/mp3-preview/45b16c6bf8f947cfc453d7d94ae706c5a989a529?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:0Bb2qlcAbZqp70WYv0TV3Z"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ubxdOP13B5rWDTeEHPw1t"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ubxdOP13B5rWDTeEHPw1t",
+        "id" : "2ubxdOP13B5rWDTeEHPw1t",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27331777b84f24199a0d375f02e",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0231777b84f24199a0d375f02e",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485131777b84f24199a0d375f02e",
+          "width" : 64
+        } ],
+        "name" : "Duety",
+        "release_date" : "2016-11-04",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:2ubxdOP13B5rWDTeEHPw1t"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7Ft8vHNJaxWX5n2Efkf2Iw"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7Ft8vHNJaxWX5n2Efkf2Iw",
+        "id" : "7Ft8vHNJaxWX5n2Efkf2Iw",
+        "name" : "Maciej Maleńczuk",
+        "type" : "artist",
+        "uri" : "spotify:artist:7Ft8vHNJaxWX5n2Efkf2Iw"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 186853,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLB381601075"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5tYlBs7gX2QsFA612ish1v"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5tYlBs7gX2QsFA612ish1v",
+      "id" : "5tYlBs7gX2QsFA612ish1v",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Kazdy Dziad",
+      "popularity" : 35,
+      "preview_url" : "https://p.scdn.co/mp3-preview/99e13fb866512c1f4a588309f73e307c032aea24?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:5tYlBs7gX2QsFA612ish1v"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5oulim0GeF4dhgNW4wVIRW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5oulim0GeF4dhgNW4wVIRW",
+        "id" : "5oulim0GeF4dhgNW4wVIRW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730e44163ee6f46dca322b7ff2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020e44163ee6f46dca322b7ff2",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510e44163ee6f46dca322b7ff2",
+          "width" : 64
+        } ],
+        "name" : "Horyzont",
+        "release_date" : "2020-10-23",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:5oulim0GeF4dhgNW4wVIRW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 241373,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG942000014"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4wO1glEEYbN8lt8Bg8bvtH"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4wO1glEEYbN8lt8Bg8bvtH",
+      "id" : "4wO1glEEYbN8lt8Bg8bvtH",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Na zawsze razem ty i ja",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/013e774d9417ba551a156f434b1e977123890e26?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:4wO1glEEYbN8lt8Bg8bvtH"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2GQm7ehPlJYfdgSTqYAjLW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2GQm7ehPlJYfdgSTqYAjLW",
+        "id" : "2GQm7ehPlJYfdgSTqYAjLW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273beb77075528af3975de3b43d",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02beb77075528af3975de3b43d",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851beb77075528af3975de3b43d",
+          "width" : 64
+        } ],
+        "name" : "A kiedy bedziesz moja zona / Album weselny (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2012-01-01",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:2GQm7ehPlJYfdgSTqYAjLW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 216942,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200208"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/44xfLOyPYg4kuHYnBpdMLP"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/44xfLOyPYg4kuHYnBpdMLP",
+      "id" : "44xfLOyPYg4kuHYnBpdMLP",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "A kiedy bedziesz moja zona",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/77878313b526e7a94da3e95e17f2091715c2c03b?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:44xfLOyPYg4kuHYnBpdMLP"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/38XDaoWA3tfneUJSgEHcnm"
+        },
+        "href" : "https://api.spotify.com/v1/albums/38XDaoWA3tfneUJSgEHcnm",
+        "id" : "38XDaoWA3tfneUJSgEHcnm",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273ebfb8bed1517a680762a4ab4",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02ebfb8bed1517a680762a4ab4",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851ebfb8bed1517a680762a4ab4",
+          "width" : 64
+        } ],
+        "name" : "Tak wielu ludzi (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2007-01-15",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:38XDaoWA3tfneUJSgEHcnm"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 291133,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200711"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/00MwuNdRB9pWSQxnBnXrn3"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/00MwuNdRB9pWSQxnBnXrn3",
+      "id" : "00MwuNdRB9pWSQxnBnXrn3",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Smak skandali",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e7e23aa9040e262f7e9f896315671628b764996b?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:00MwuNdRB9pWSQxnBnXrn3"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3lKMPkMqUCgqZErT2KWDVt"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3lKMPkMqUCgqZErT2KWDVt",
+        "id" : "3lKMPkMqUCgqZErT2KWDVt",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273d91a4b89cfe93d138411a49f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02d91a4b89cfe93d138411a49f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851d91a4b89cfe93d138411a49f",
+          "width" : 64
+        } ],
+        "name" : "Concert Hits",
+        "release_date" : "2019-03-20",
+        "release_date_precision" : "day",
+        "total_tracks" : 18,
+        "type" : "album",
+        "uri" : "spotify:album:3lKMPkMqUCgqZErT2KWDVt"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 235910,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941201351"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1AYNLYzaP6i75KKLoZWfsR"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1AYNLYzaP6i75KKLoZWfsR",
+      "id" : "1AYNLYzaP6i75KKLoZWfsR",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Jak minął dzień",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/bc26e74d990b1663beae30f559adc4ff144da143?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:1AYNLYzaP6i75KKLoZWfsR"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/08vJAYLLf2CnL6AHUHiOpa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/08vJAYLLf2CnL6AHUHiOpa",
+        "id" : "08vJAYLLf2CnL6AHUHiOpa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2733e65e544738c274e111b6507",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e023e65e544738c274e111b6507",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048513e65e544738c274e111b6507",
+          "width" : 64
+        } ],
+        "name" : "My Cyganie (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2004-01-15",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:08vJAYLLf2CnL6AHUHiOpa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 213893,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200657"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0xBWU379iZvSwEi21G1qyK"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0xBWU379iZvSwEi21G1qyK",
+      "id" : "0xBWU379iZvSwEi21G1qyK",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Oczi cziornyje",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/3cebca3651173c239ee79df0b955109990d332af?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:0xBWU379iZvSwEi21G1qyK"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6xLDmzyc0vVMyh14D4smo4"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6xLDmzyc0vVMyh14D4smo4",
+        "id" : "6xLDmzyc0vVMyh14D4smo4",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27335cf4175c3cd1ff8e48558b8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0235cf4175c3cd1ff8e48558b8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485135cf4175c3cd1ff8e48558b8",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of vol.2 - Other Versions (Krzysztof Krawczyk Antologia)",
+        "release_date" : "1999-01-15",
+        "release_date_precision" : "day",
+        "total_tracks" : 13,
+        "type" : "album",
+        "uri" : "spotify:album:6xLDmzyc0vVMyh14D4smo4"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 179146,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200755"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1B8SnFQZCLKAyF0m7iR39v"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1B8SnFQZCLKAyF0m7iR39v",
+      "id" : "1B8SnFQZCLKAyF0m7iR39v",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Mój Przyjacielu (2011 version)",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/6663cf5f9fe032ca0e60d904c2da8b7d51a6917d?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:1B8SnFQZCLKAyF0m7iR39v"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5oulim0GeF4dhgNW4wVIRW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5oulim0GeF4dhgNW4wVIRW",
+        "id" : "5oulim0GeF4dhgNW4wVIRW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730e44163ee6f46dca322b7ff2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020e44163ee6f46dca322b7ff2",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510e44163ee6f46dca322b7ff2",
+          "width" : 64
+        } ],
+        "name" : "Horyzont",
+        "release_date" : "2020-10-23",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:5oulim0GeF4dhgNW4wVIRW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 206346,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG942000013"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5BocevmHQf07oAVI6Fi4Dz"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5BocevmHQf07oAVI6Fi4Dz",
+      "id" : "5BocevmHQf07oAVI6Fi4Dz",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Dla mojej dziewczyny",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/37efef0c336d2bd16c92486d550565641c7dbd21?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:5BocevmHQf07oAVI6Fi4Dz"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5oulim0GeF4dhgNW4wVIRW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5oulim0GeF4dhgNW4wVIRW",
+        "id" : "5oulim0GeF4dhgNW4wVIRW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730e44163ee6f46dca322b7ff2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020e44163ee6f46dca322b7ff2",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510e44163ee6f46dca322b7ff2",
+          "width" : 64
+        } ],
+        "name" : "Horyzont",
+        "release_date" : "2020-10-23",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:5oulim0GeF4dhgNW4wVIRW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 268173,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG942000011"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4LEnopo5je4vdQXuz2bpZ6"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4LEnopo5je4vdQXuz2bpZ6",
+      "id" : "4LEnopo5je4vdQXuz2bpZ6",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Apostoł nocy",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/5f49b3d9d089e886f894574513e777914005b6ae?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:4LEnopo5je4vdQXuz2bpZ6"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2vlPmF3hjVuYRZsNBmon4N"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2vlPmF3hjVuYRZsNBmon4N",
+        "id" : "2vlPmF3hjVuYRZsNBmon4N",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730decc63e410159f78502b1b4",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020decc63e410159f78502b1b4",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510decc63e410159f78502b1b4",
+          "width" : 64
+        } ],
+        "name" : "Polskie Tango (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2000-01-01",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:2vlPmF3hjVuYRZsNBmon4N"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 244693,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200405"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0FgECTbJ7EgJwKd5ywg24S"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0FgECTbJ7EgJwKd5ywg24S",
+      "id" : "0FgECTbJ7EgJwKd5ywg24S",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Takie Tango",
+      "popularity" : 32,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b76f09bdb4f00c786f86529f8bcf51e503b8cf59?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:0FgECTbJ7EgJwKd5ywg24S"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6xLDmzyc0vVMyh14D4smo4"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6xLDmzyc0vVMyh14D4smo4",
+        "id" : "6xLDmzyc0vVMyh14D4smo4",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27335cf4175c3cd1ff8e48558b8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0235cf4175c3cd1ff8e48558b8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485135cf4175c3cd1ff8e48558b8",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of vol.2 - Other Versions (Krzysztof Krawczyk Antologia)",
+        "release_date" : "1999-01-15",
+        "release_date_precision" : "day",
+        "total_tracks" : 13,
+        "type" : "album",
+        "uri" : "spotify:album:6xLDmzyc0vVMyh14D4smo4"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 238819,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200753"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5iQtIORpz6nHfbPkTnoRqi"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5iQtIORpz6nHfbPkTnoRqi",
+      "id" : "5iQtIORpz6nHfbPkTnoRqi",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Nie zostalo nam juz nic",
+      "popularity" : 32,
+      "preview_url" : "https://p.scdn.co/mp3-preview/cc0b50b1f1a32be8dfe30e17268889e8474c3798?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:5iQtIORpz6nHfbPkTnoRqi"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3kJXLbjiLCgKd0pct82oBU"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3kJXLbjiLCgKd0pct82oBU",
+        "id" : "3kJXLbjiLCgKd0pct82oBU",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b273b7106bed0e8c1ff862e3f015",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e02b7106bed0e8c1ff862e3f015",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d00004851b7106bed0e8c1ff862e3f015",
+          "width" : 64
+        } ],
+        "name" : "Byłaś mi nadzieją",
+        "release_date" : "1974-10-25",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:3kJXLbjiLCgKd0pct82oBU"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 180050,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLA551900497"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/54pxUhj3qd65WfL4StfJ07"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/54pxUhj3qd65WfL4StfJ07",
+      "id" : "54pxUhj3qd65WfL4StfJ07",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Hallo, co o tym wiesz",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b460c220858d9d72e7bdde328d87fe1981a32506?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:54pxUhj3qd65WfL4StfJ07"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5oulim0GeF4dhgNW4wVIRW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5oulim0GeF4dhgNW4wVIRW",
+        "id" : "5oulim0GeF4dhgNW4wVIRW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2730e44163ee6f46dca322b7ff2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e020e44163ee6f46dca322b7ff2",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048510e44163ee6f46dca322b7ff2",
+          "width" : 64
+        } ],
+        "name" : "Horyzont",
+        "release_date" : "2020-10-23",
+        "release_date_precision" : "day",
+        "total_tracks" : 14,
+        "type" : "album",
+        "uri" : "spotify:album:5oulim0GeF4dhgNW4wVIRW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 232706,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG942000019"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6eYwvjsa1j4ZFU00RLY8DL"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6eYwvjsa1j4ZFU00RLY8DL",
+      "id" : "6eYwvjsa1j4ZFU00RLY8DL",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Dziś dla ciebie chcę",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/20111a09924d608fb2d26928f6e060ad7fd09791?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 13,
+      "type" : "track",
+      "uri" : "spotify:track:6eYwvjsa1j4ZFU00RLY8DL"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3sYr49vFJ6BPZnV5Ky1PLH"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3sYr49vFJ6BPZnV5Ky1PLH",
+          "id" : "3sYr49vFJ6BPZnV5Ky1PLH",
+          "name" : "Andrzej Piaseczny",
+          "type" : "artist",
+          "uri" : "spotify:artist:3sYr49vFJ6BPZnV5Ky1PLH"
+        }, {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2OF88NF2idHIpRWCKwW0pN"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2OF88NF2idHIpRWCKwW0pN",
+          "id" : "2OF88NF2idHIpRWCKwW0pN",
+          "name" : "Mafia",
+          "type" : "artist",
+          "uri" : "spotify:artist:2OF88NF2idHIpRWCKwW0pN"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7F0BjnXDcTI86UmzWdxhXc"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7F0BjnXDcTI86UmzWdxhXc",
+        "id" : "7F0BjnXDcTI86UmzWdxhXc",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27338aa5c7fcf38008cafdde720",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0238aa5c7fcf38008cafdde720",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485138aa5c7fcf38008cafdde720",
+          "width" : 64
+        } ],
+        "name" : "15 dni",
+        "release_date" : "2008",
+        "release_date_precision" : "year",
+        "total_tracks" : 30,
+        "type" : "album",
+        "uri" : "spotify:album:7F0BjnXDcTI86UmzWdxhXc"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3sYr49vFJ6BPZnV5Ky1PLH"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3sYr49vFJ6BPZnV5Ky1PLH",
+        "id" : "3sYr49vFJ6BPZnV5Ky1PLH",
+        "name" : "Andrzej Piaseczny",
+        "type" : "artist",
+        "uri" : "spotify:artist:3sYr49vFJ6BPZnV5Ky1PLH"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 202200,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLA330400207"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/62DUKVH8GWzuAaDHvdUBxb"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/62DUKVH8GWzuAaDHvdUBxb",
+      "id" : "62DUKVH8GWzuAaDHvdUBxb",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Przytul Mnie Zycie (feat. Krzysztof Krawczyk)",
+      "popularity" : 26,
+      "preview_url" : "https://p.scdn.co/mp3-preview/1606eade8793115ed05c1385a274cfebbcd48522?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 12,
+      "type" : "track",
+      "uri" : "spotify:track:62DUKVH8GWzuAaDHvdUBxb"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/08vJAYLLf2CnL6AHUHiOpa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/08vJAYLLf2CnL6AHUHiOpa",
+        "id" : "08vJAYLLf2CnL6AHUHiOpa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b2733e65e544738c274e111b6507",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e023e65e544738c274e111b6507",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d000048513e65e544738c274e111b6507",
+          "width" : 64
+        } ],
+        "name" : "My Cyganie (Krzysztof Krawczyk Antologia)",
+        "release_date" : "2004-01-15",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:08vJAYLLf2CnL6AHUHiOpa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 220746,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLG941200666"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0mdxavNRDN4bD2oHDp9OQ1"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0mdxavNRDN4bD2oHDp9OQ1",
+      "id" : "0mdxavNRDN4bD2oHDp9OQ1",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Tesknota Cygana",
+      "popularity" : 32,
+      "preview_url" : "https://p.scdn.co/mp3-preview/9654b424b82c354e13245b5c79647933c1aef9df?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:0mdxavNRDN4bD2oHDp9OQ1"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+          "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+          "name" : "Krzysztof Krawczyk",
+          "type" : "artist",
+          "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+        } ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1gDUPdTlfjED5WMLy7LtyP"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1gDUPdTlfjED5WMLy7LtyP",
+        "id" : "1gDUPdTlfjED5WMLy7LtyP",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ab67616d0000b27321bfc72779c1eb2c96221a45",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab67616d00001e0221bfc72779c1eb2c96221a45",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ab67616d0000485121bfc72779c1eb2c96221a45",
+          "width" : 64
+        } ],
+        "name" : "Pokochaj moje marzenia",
+        "release_date" : "1987-01-01",
+        "release_date_precision" : "day",
+        "total_tracks" : 10,
+        "type" : "album",
+        "uri" : "spotify:album:1gDUPdTlfjED5WMLy7LtyP"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6UknRCRLdP6e96BVIH0ULX"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6UknRCRLdP6e96BVIH0ULX",
+        "id" : "6UknRCRLdP6e96BVIH0ULX",
+        "name" : "Bohdan Smoleń",
+        "type" : "artist",
+        "uri" : "spotify:artist:6UknRCRLdP6e96BVIH0ULX"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1SKeSGQ3LMHYCEgqFGvJbE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1SKeSGQ3LMHYCEgqFGvJbE",
+        "id" : "1SKeSGQ3LMHYCEgqFGvJbE",
+        "name" : "Krzysztof Krawczyk",
+        "type" : "artist",
+        "uri" : "spotify:artist:1SKeSGQ3LMHYCEgqFGvJbE"
+      } ],
+      "disc_number" : 1,
+      "duration_ms" : 210710,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "PLB178700006"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0NM2LmFyl8UbfomFVotqam"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0NM2LmFyl8UbfomFVotqam",
+      "id" : "0NM2LmFyl8UbfomFVotqam",
+      "is_local" : false,
+      "is_playable" : true,
+      "name" : "Dziewczyny, które mam na myśli",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/3a94339ddfa323dd5ea8577e84ca3133efa675b2?cid=774b29d4f13844c495f206cafdad9c86",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:0NM2LmFyl8UbfomFVotqam"
+    } ],
+    "limit" : 50,
+    "next" : "https://api.spotify.com/v1/search?query=krzysztof+krawczyk&type=track&market=PL&offset=50&limit=50",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 857
+  }
+}
