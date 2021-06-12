@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -79,7 +78,7 @@ class SearchGuiTest {
 	}
 
 	@Test
-	void searchGuiTest_searchEmptyValue_success() {
+	void searchGuiTest_searchEmptyValue_emptyGrid() {
 
 		SearchGui searchGui = getSearchGuiWithModifiedMethods();
 		searchGui.searchTextField.setValue("");
@@ -93,35 +92,7 @@ class SearchGuiTest {
 	}
 
 	@Test
-	void searchGuiTest_expiredSession_success() throws IOException {
-
-		String spotifyUrl = "https://api.spotify.com/v1/search?q=krzysztof%20krawczyk&type=track&market=PL&limit=50&offset=0";
-		String filePath = "test_response" + FileSystems.getDefault().getSeparator() + "response.json";
-		this.mockServer.expect(requestTo(spotifyUrl)).andExpect(method(HttpMethod.GET))
-				.andRespond(withSuccess(ResponseReaderFromFile.readResponseFromFile(filePath), MediaType.APPLICATION_JSON));
-
-		SpotifyAlbumClient spotifyClient = Mockito.mock(SpotifyAlbumClient.class);
-		doThrow(new HttpClientErrorException(HttpStatus.UNAUTHORIZED, "Unauthorized"))
-				.when(spotifyClient).getAlbumsByAuthor(null, "krzysztof krawczyk");
-
-		SearchGui searchGui = new SearchGui(spotifyClient, sessionUtils) {
-			@Override
-			void showNotification(String notificationText) {
-			}
-			@Override
-			void navigateOrReload(boolean withRedirect) {
-			}
-		};
-		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
-		searchGui.searchButton.click();
-
-		verify(spotifyClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
-
-		verify(sessionUtils, times(1)).expireCurrentSession();
-	}
-
-	@Test
-	void searchGuiTest_expiredSession2_success() {
+	void searchGuiTest_expiredSession_logoutExecuted() {
 
 		doThrow(new HttpClientErrorException(HttpStatus.UNAUTHORIZED, "Unauthorized"))
 				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "krzysztof krawczyk");
@@ -133,6 +104,38 @@ class SearchGuiTest {
 		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
 
 		verify(sessionUtils, times(1)).expireCurrentSession();
+	}
+
+	@Test
+	void searchGuiTest_HTTPErrorWhileSearching_notification() {
+
+		doThrow(new HttpClientErrorException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Server Error"))
+				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "krzysztof krawczyk");
+
+		String expectedNotification = "Error while searching: 500 Internal Server Error";
+		SearchGui searchGui = getSearchGuiWithAssertionInNotification(expectedNotification);
+		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
+		searchGui.searchButton.click();
+
+		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
+
+		verify(sessionUtils, never()).expireCurrentSession();
+	}
+
+	@Test
+	void searchGuiTest_otherErrorWhileSearching_notification() {
+
+		doThrow(new RuntimeException("Unexpected Error"))
+				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "krzysztof krawczyk");
+
+		String expectedNotification = "Error while searching: Unexpected Error";
+		SearchGui searchGui = getSearchGuiWithAssertionInNotification(expectedNotification);
+		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
+		searchGui.searchButton.click();
+
+		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
+
+		verify(sessionUtils, never()).expireCurrentSession();
 	}
 
 	@Test
@@ -148,6 +151,18 @@ class SearchGuiTest {
 		return new SearchGui(spotifyAlbumClient, sessionUtils) {
 			@Override
 			void showNotification(String notificationText) {
+			}
+			@Override
+			void navigateOrReload(boolean withRedirect) {
+			}
+		};
+	}
+
+	private SearchGui getSearchGuiWithAssertionInNotification(String expectedNotificationText) {
+		return new SearchGui(spotifyAlbumClient, sessionUtils) {
+			@Override
+			void showNotification(String notificationText) {
+				Assertions.assertEquals(expectedNotificationText, notificationText);
 			}
 			@Override
 			void navigateOrReload(boolean withRedirect) {
