@@ -40,10 +40,10 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 class SearchGuiTest {
 
 	@MockBean
-	SessionUtils sessionUtils;
+	private SessionUtils sessionUtils;
 
 	@SpyBean
-	SpotifyAlbumClient spotifyAlbumClient;
+	private SpotifyAlbumClient spotifyAlbumClient;
 
 	private MockRestServiceServer mockServer;
 
