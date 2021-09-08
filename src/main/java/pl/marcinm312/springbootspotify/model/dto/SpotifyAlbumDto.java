@@ -28,4 +28,31 @@ public class SpotifyAlbumDto {
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
+
+	@Override
+	public String toString() {
+		return "SpotifyAlbumDto{" +
+				"trackName='" + trackName + '\'' +
+				", imageUrl='" + imageUrl + '\'' +
+				'}';
+	}
+
+	@Override
+	public final boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof SpotifyAlbumDto)) return false;
+
+		SpotifyAlbumDto that = (SpotifyAlbumDto) o;
+
+		if (getTrackName() != null ? !getTrackName().equals(that.getTrackName()) : that.getTrackName() != null)
+			return false;
+		return getImageUrl() != null ? getImageUrl().equals(that.getImageUrl()) : that.getImageUrl() == null;
+	}
+
+	@Override
+	public final int hashCode() {
+		int result = getTrackName() != null ? getTrackName().hashCode() : 0;
+		result = 31 * result + (getImageUrl() != null ? getImageUrl().hashCode() : 0);
+		return result;
+	}
 }
