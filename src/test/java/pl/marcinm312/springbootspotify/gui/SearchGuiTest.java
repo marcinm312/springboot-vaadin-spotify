@@ -3,9 +3,12 @@ package pl.marcinm312.springbootspotify.gui;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.data.provider.Query;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.MockedStatic;
+import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -24,6 +27,7 @@ import pl.marcinm312.springbootspotify.model.dto.SpotifyAlbumDto;
 import pl.marcinm312.springbootspotify.service.SpotifyAlbumClient;
 import pl.marcinm312.springbootspotify.testdataprovider.ResponseReaderFromFile;
 import pl.marcinm312.springbootspotify.utils.SessionUtils;
+import pl.marcinm312.springbootspotify.utils.VaadinUtils;
 
 import java.io.IOException;
 import java.nio.file.FileSystems;
@@ -50,6 +54,13 @@ class SearchGuiTest {
 	@Autowired
 	private RestTemplate restTemplate;
 
+	private static MockedStatic<VaadinUtils> mockedVaadinUtils;
+
+	@BeforeAll
+	static void init() {
+		mockedVaadinUtils = Mockito.mockStatic(VaadinUtils.class);
+	}
+
 	@BeforeEach
 	void setup() {
 
@@ -65,7 +76,7 @@ class SearchGuiTest {
 		this.mockServer.expect(requestTo(spotifyUrl)).andExpect(method(HttpMethod.GET))
 				.andRespond(withSuccess(ResponseReaderFromFile.readResponseFromFile(filePath), MediaType.APPLICATION_JSON));
 
-		SearchGui searchGui = getSearchGuiWithModifiedMethods();
+		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
 		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
 		searchGui.searchButton.click();
 
@@ -80,7 +91,7 @@ class SearchGuiTest {
 	@Test
 	void searchGuiTest_searchEmptyValue_emptyGrid() {
 
-		SearchGui searchGui = getSearchGuiWithModifiedMethods();
+		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
 		searchGui.searchTextField.setValue("");
 		searchGui.searchButton.click();
 
@@ -97,7 +108,7 @@ class SearchGuiTest {
 		doThrow(new HttpClientErrorException(HttpStatus.UNAUTHORIZED, "Unauthorized"))
 				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "krzysztof krawczyk");
 
-		SearchGui searchGui = getSearchGuiWithModifiedMethods();
+		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
 		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
 		searchGui.searchButton.click();
 
@@ -113,13 +124,13 @@ class SearchGuiTest {
 				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "krzysztof krawczyk");
 
 		String expectedNotification = "Error while searching: 500 Internal Server Error";
-		SearchGui searchGui = getSearchGuiWithAssertionInNotification(expectedNotification);
+		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
 		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
 		searchGui.searchButton.click();
 
 		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
-
 		verify(sessionUtils, never()).expireCurrentSession();
+		mockedVaadinUtils.verify(() -> VaadinUtils.showNotification(eq(expectedNotification)), times(1));
 	}
 
 	@Test
@@ -129,44 +140,21 @@ class SearchGuiTest {
 				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "krzysztof krawczyk");
 
 		String expectedNotification = "Error while searching: Unexpected Error";
-		SearchGui searchGui = getSearchGuiWithAssertionInNotification(expectedNotification);
+		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
 		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
 		searchGui.searchButton.click();
 
 		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
-
 		verify(sessionUtils, never()).expireCurrentSession();
+		mockedVaadinUtils.verify(() -> VaadinUtils.showNotification(eq(expectedNotification)), times(1));
 	}
 
 	@Test
 	void searchGuiTest_logout_success() {
 
-		SearchGui searchGui = getSearchGuiWithModifiedMethods();
+		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
 		searchGui.logoutButton.click();
 
 		verify(sessionUtils, times(1)).expireCurrentSession();
-	}
-
-	private SearchGui getSearchGuiWithModifiedMethods() {
-		return new SearchGui(spotifyAlbumClient, sessionUtils) {
-			@Override
-			void showNotification(String notificationText) {
-			}
-			@Override
-			void navigateOrReload(boolean withRedirect) {
-			}
-		};
-	}
-
-	private SearchGui getSearchGuiWithAssertionInNotification(String expectedNotificationText) {
-		return new SearchGui(spotifyAlbumClient, sessionUtils) {
-			@Override
-			void showNotification(String notificationText) {
-				Assertions.assertEquals(expectedNotificationText, notificationText);
-			}
-			@Override
-			void navigateOrReload(boolean withRedirect) {
-			}
-		};
 	}
 }

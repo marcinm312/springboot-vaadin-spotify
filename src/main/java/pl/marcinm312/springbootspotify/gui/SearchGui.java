@@ -1,10 +1,8 @@
 package pl.marcinm312.springbootspotify.gui;
 
-import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Image;
-import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.renderer.ComponentRenderer;
@@ -18,6 +16,7 @@ import org.springframework.web.client.HttpClientErrorException;
 import pl.marcinm312.springbootspotify.service.SpotifyAlbumClient;
 import pl.marcinm312.springbootspotify.model.dto.SpotifyAlbumDto;
 import pl.marcinm312.springbootspotify.utils.SessionUtils;
+import pl.marcinm312.springbootspotify.utils.VaadinUtils;
 
 import java.util.List;
 
@@ -44,7 +43,7 @@ public class SearchGui extends VerticalLayout {
 		OAuth2Authentication details = (OAuth2Authentication) authentication;
 
 		logoutButton = new Button("Log out");
-		logoutButton.addClickListener(event -> logoutAction(true));
+		logoutButton.addClickListener(event -> logoutActionWithNavigate());
 
 		searchTextField = new TextField();
 		searchTextField.setLabel("Artist or track name:");
@@ -75,30 +74,23 @@ public class SearchGui extends VerticalLayout {
 		} catch (HttpClientErrorException exc) {
 			log.error("Error while searching: {}", exc.getMessage());
 			if ("Unauthorized".equals(exc.getStatusText())) {
-				logoutAction(false);
+				logoutActionWithReload();
 			} else {
-				showNotification("Error while searching: " + exc.getMessage());
+				VaadinUtils.showNotification("Error while searching: " + exc.getMessage());
 			}
 		} catch (Exception exc) {
 			log.error("Error while searching: {}", exc.getMessage());
-			showNotification("Error while searching: " + exc.getMessage());
+			VaadinUtils.showNotification("Error while searching: " + exc.getMessage());
 		}
 	}
 
-	private void logoutAction(boolean withRedirect) {
+	private void logoutActionWithNavigate() {
 		sessionUtils.expireCurrentSession();
-		navigateOrReload(withRedirect);
+		VaadinUtils.navigate("log-out/");
 	}
 
-	void navigateOrReload(boolean withRedirect) {
-		if (withRedirect) {
-			UI.getCurrent().navigate("log-out/");
-		} else {
-			UI.getCurrent().getPage().reload();
-		}
-	}
-
-	void showNotification(String notificationText) {
-		Notification.show(notificationText, 5000, Notification.Position.MIDDLE);
+	private void logoutActionWithReload() {
+		sessionUtils.expireCurrentSession();
+		VaadinUtils.reloadCurrentPage();
 	}
 }
