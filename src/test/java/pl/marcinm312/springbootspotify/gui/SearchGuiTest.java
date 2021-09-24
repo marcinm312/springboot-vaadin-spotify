@@ -2,10 +2,7 @@ package pl.marcinm312.springbootspotify.gui;
 
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.data.provider.Query;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
@@ -56,16 +53,17 @@ class SearchGuiTest {
 
 	private static MockedStatic<VaadinUtils> mockedVaadinUtils;
 
-	@BeforeAll
-	static void init() {
-		mockedVaadinUtils = Mockito.mockStatic(VaadinUtils.class);
-	}
-
 	@BeforeEach
 	void setup() {
 
+		mockedVaadinUtils = Mockito.mockStatic(VaadinUtils.class);
 		MockitoAnnotations.openMocks(this);
 		this.mockServer = MockRestServiceServer.createServer(restTemplate);
+	}
+
+	@AfterEach
+	void tearDown() {
+		mockedVaadinUtils.close();
 	}
 
 	@Test
