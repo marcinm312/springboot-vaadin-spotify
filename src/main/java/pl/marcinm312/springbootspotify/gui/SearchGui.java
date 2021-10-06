@@ -55,7 +55,7 @@ public class SearchGui extends VerticalLayout {
 			image.setHeight("150px");
 			return image;
 		})).setHeader("Image");
-		albumDtoGrid.setHeightByRows(true);
+		albumDtoGrid.setAllRowsVisible(true);
 
 		searchButton = new Button("Search!");
 		searchButton.addClickListener(event -> searchButtonClickEvent(details));
