@@ -3,9 +3,11 @@ package pl.marcinm312.springbootspotify.gui;
 import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
 @Route("log-out")
+@PageTitle("Logging out")
 public class AfterLogoutGui extends VerticalLayout {
 
 	H1 h1;
