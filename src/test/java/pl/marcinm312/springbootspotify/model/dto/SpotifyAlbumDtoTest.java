@@ -11,8 +11,8 @@ class SpotifyAlbumDtoTest {
 	void equalsHashCode_differentCases() {
 		EqualsVerifier.forClass(SpotifyAlbumDto.class).suppress(Warning.NONFINAL_FIELDS).verify();
 
-		SpotifyAlbumDto spotifyAlbumDto1 = new SpotifyAlbumDto("track1", "http://spotify.com/track1/image");
-		SpotifyAlbumDto spotifyAlbumDto2 = new SpotifyAlbumDto("track1", "http://spotify.com/track1/image");
+		SpotifyAlbumDto spotifyAlbumDto1 = new SpotifyAlbumDto("track1", "https://spotify.com/track1/image");
+		SpotifyAlbumDto spotifyAlbumDto2 = new SpotifyAlbumDto("track1", "https://spotify.com/track1/image");
 
 		Assertions.assertEquals(spotifyAlbumDto1, spotifyAlbumDto2);
 
