@@ -15,8 +15,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests().antMatchers("/").authenticated()
-				.antMatchers("/log-out", "/login**").permitAll()
-				.and().oauth2Login()
+				.antMatchers("/log-out").permitAll()
+				.and().oauth2Login().permitAll()
 				.and().csrf().disable()
 				.sessionManagement().maximumSessions(10000).maxSessionsPreventsLogin(false)
 				.expiredUrl("/oauth2/authorization/spotify").sessionRegistry(sessionRegistry());
