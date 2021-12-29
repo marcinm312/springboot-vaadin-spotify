@@ -9,6 +9,7 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.boot.test.mock.mockito.MockBeans;
 import org.springframework.boot.test.mock.mockito.SpyBean;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
@@ -39,13 +40,11 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = BeansConfig.class)
+@MockBeans({@MockBean(OAuth2AuthorizedClientService.class)})
 class SearchGuiTest {
 
 	@MockBean
 	private SessionUtils sessionUtils;
-
-	@MockBean
-	private OAuth2AuthorizedClientService authorizedClientService;
 
 	@SpyBean
 	private SpotifyAlbumClient spotifyAlbumClient;
