@@ -7,8 +7,8 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.oauth2.provider.OAuth2Authentication;
-import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
+import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
+import org.springframework.security.oauth2.client.authentication.OAuth2LoginAuthenticationToken;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import pl.marcinm312.springbootspotify.model.SpotifyAlbum;
@@ -30,7 +30,7 @@ public class SpotifyAlbumClient {
 
 	private final org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
-	public List<SpotifyAlbumDto> getAlbumsByAuthor(OAuth2Authentication details, String authorName) {
+	public List<SpotifyAlbumDto> getAlbumsByAuthor(OAuth2AuthenticationToken details, String authorName) {
 
 		if (StringUtils.isEmpty(authorName)) {
 			return new ArrayList<>();
@@ -38,7 +38,7 @@ public class SpotifyAlbumClient {
 
 		String jwt = null;
 		if (details != null) {
-			jwt = ((OAuth2AuthenticationDetails) details.getDetails()).getTokenValue();
+			jwt = ((OAuth2LoginAuthenticationToken) details.getDetails()).getAccessToken().getTokenValue();
 			log.info("user={}", details.getName());
 		}
 

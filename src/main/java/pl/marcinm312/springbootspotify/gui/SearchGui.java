@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.oauth2.provider.OAuth2Authentication;
+import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
 import org.springframework.web.client.HttpClientErrorException;
 import pl.marcinm312.springbootspotify.service.SpotifyAlbumClient;
 import pl.marcinm312.springbootspotify.model.dto.SpotifyAlbumDto;
@@ -42,7 +42,7 @@ public class SearchGui extends VerticalLayout {
 		this.sessionUtils = sessionUtils;
 
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		OAuth2Authentication details = (OAuth2Authentication) authentication;
+		OAuth2AuthenticationToken details = (OAuth2AuthenticationToken) authentication;
 
 		logoutButton = new Button("Log out");
 		logoutButton.addClickListener(event -> logoutActionWithNavigate());
@@ -65,7 +65,7 @@ public class SearchGui extends VerticalLayout {
 		add(logoutButton, searchTextField, searchButton, albumDtoGrid);
 	}
 
-	private void searchButtonClickEvent(OAuth2Authentication details) {
+	private void searchButtonClickEvent(OAuth2AuthenticationToken details) {
 		log.info("----------------------------------------");
 		String searchValue = searchTextField.getValue().toLowerCase();
 		log.info("searchValue={}", searchValue);
