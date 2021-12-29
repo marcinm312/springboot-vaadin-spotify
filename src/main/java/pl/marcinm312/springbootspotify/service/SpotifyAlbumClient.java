@@ -7,8 +7,9 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;
+import org.springframework.security.oauth2.client.OAuth2AuthorizedClientService;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
-import org.springframework.security.oauth2.client.authentication.OAuth2LoginAuthenticationToken;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import pl.marcinm312.springbootspotify.model.SpotifyAlbum;
@@ -22,24 +23,29 @@ import java.util.stream.Collectors;
 public class SpotifyAlbumClient {
 
 	private final RestTemplate restTemplate;
+	private final OAuth2AuthorizedClientService authorizedClientService;
 
 	@Autowired
-	public SpotifyAlbumClient(RestTemplate restTemplate) {
+	public SpotifyAlbumClient(RestTemplate restTemplate, OAuth2AuthorizedClientService authorizedClientService) {
 		this.restTemplate = restTemplate;
+		this.authorizedClientService = authorizedClientService;
 	}
 
 	private final org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
-	public List<SpotifyAlbumDto> getAlbumsByAuthor(OAuth2AuthenticationToken details, String authorName) {
+	public List<SpotifyAlbumDto> getAlbumsByAuthor(OAuth2AuthenticationToken authenticationToken, String authorName) {
 
 		if (StringUtils.isEmpty(authorName)) {
 			return new ArrayList<>();
 		}
 
 		String jwt = null;
-		if (details != null) {
-			jwt = ((OAuth2LoginAuthenticationToken) details.getDetails()).getAccessToken().getTokenValue();
-			log.info("user={}", details.getName());
+		if (authenticationToken != null) {
+			String authenticationName = authenticationToken.getName();
+			log.info("user={}", authenticationName);
+			OAuth2AuthorizedClient client = authorizedClientService.loadAuthorizedClient
+					(authenticationToken.getAuthorizedClientRegistrationId(), authenticationName);
+			jwt = client.getAccessToken().getTokenValue();
 		}
 
 		ResponseEntity<SpotifyAlbum> exchange = getSpotifyAlbumResponseEntity(authorName, jwt);
