@@ -13,6 +13,7 @@ import org.springframework.boot.test.mock.mockito.SpyBean;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.security.oauth2.client.OAuth2AuthorizedClientService;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.client.MockRestServiceServer;
@@ -42,6 +43,9 @@ class SearchGuiTest {
 
 	@MockBean
 	private SessionUtils sessionUtils;
+
+	@MockBean
+	private OAuth2AuthorizedClientService authorizedClientService;
 
 	@SpyBean
 	private SpotifyAlbumClient spotifyAlbumClient;
