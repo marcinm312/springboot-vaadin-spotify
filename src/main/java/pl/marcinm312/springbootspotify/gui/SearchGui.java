@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.oauth2.provider.OAuth2Authentication;
+import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
 import org.springframework.web.client.HttpClientErrorException;
 import pl.marcinm312.springbootspotify.service.SpotifyAlbumClient;
 import pl.marcinm312.springbootspotify.model.dto.SpotifyAlbumDto;
@@ -42,7 +42,7 @@ public class SearchGui extends VerticalLayout {
 		this.sessionUtils = sessionUtils;
 
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		OAuth2Authentication details = (OAuth2Authentication) authentication;
+		OAuth2AuthenticationToken authenticationToken = (OAuth2AuthenticationToken) authentication;
 
 		logoutButton = new Button("Log out");
 		logoutButton.addClickListener(event -> logoutActionWithNavigate());
@@ -60,17 +60,17 @@ public class SearchGui extends VerticalLayout {
 		albumDtoGrid.setAllRowsVisible(true);
 
 		searchButton = new Button("Search!");
-		searchButton.addClickListener(event -> searchButtonClickEvent(details));
+		searchButton.addClickListener(event -> searchButtonClickEvent(authenticationToken));
 
 		add(logoutButton, searchTextField, searchButton, albumDtoGrid);
 	}
 
-	private void searchButtonClickEvent(OAuth2Authentication details) {
+	private void searchButtonClickEvent(OAuth2AuthenticationToken authenticationToken) {
 		log.info("----------------------------------------");
 		String searchValue = searchTextField.getValue().toLowerCase();
 		log.info("searchValue={}", searchValue);
 		try {
-			List<SpotifyAlbumDto> albumList = spotifyAlbumClient.getAlbumsByAuthor(details, searchValue);
+			List<SpotifyAlbumDto> albumList = spotifyAlbumClient.getAlbumsByAuthor(authenticationToken, searchValue);
 			log.info("albumList.size()={}", albumList.size());
 			albumDtoGrid.setItems(albumList);
 		} catch (HttpClientErrorException exc) {

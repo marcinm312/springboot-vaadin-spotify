@@ -1,6 +1,5 @@
 package pl.marcinm312.springbootspotify.config;
 
-import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,16 +10,16 @@ import org.springframework.security.core.session.SessionRegistryImpl;
 import org.springframework.security.web.session.HttpSessionEventPublisher;
 
 @Configuration
-@EnableOAuth2Sso
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests().antMatchers("/").authenticated()
 				.antMatchers("/log-out").permitAll()
+				.and().oauth2Login().permitAll()
 				.and().csrf().disable()
 				.sessionManagement().maximumSessions(10000).maxSessionsPreventsLogin(false)
-				.expiredUrl("/login").sessionRegistry(sessionRegistry());
+				.expiredUrl("/oauth2/authorization/spotify").sessionRegistry(sessionRegistry());
 	}
 
 	@Bean
