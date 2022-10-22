@@ -81,8 +81,9 @@ public class SearchGui extends VerticalLayout {
 				VaadinUtils.showNotification("Error while searching: " + exc.getMessage());
 			}
 		} catch (Exception exc) {
-			log.error("Error while searching: {}", exc.getMessage());
-			VaadinUtils.showNotification("Error while searching: " + exc.getMessage());
+			String errorMessage = String.format("Error while searching: %s", exc.getMessage());
+			log.error(errorMessage, exc);
+			VaadinUtils.showNotification(errorMessage);
 		}
 	}
 
