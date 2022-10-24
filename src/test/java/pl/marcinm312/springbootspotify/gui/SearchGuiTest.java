@@ -85,8 +85,9 @@ class SearchGuiTest {
 		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
 
 		Grid<SpotifyAlbumDto> grid = searchGui.albumDtoGrid;
-		int receivedSize = grid.getDataProvider().size(new Query<>());
-		Assertions.assertEquals(50, receivedSize);
+		int expectedGridSize = 50;
+		int receivedGridSize = grid.getDataProvider().size(new Query<>());
+		Assertions.assertEquals(expectedGridSize, receivedGridSize);
 	}
 
 	@Test
@@ -94,6 +95,20 @@ class SearchGuiTest {
 
 		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
 		searchGui.searchTextField.setValue("");
+		searchGui.searchButton.click();
+
+		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq(""));
+
+		Grid<SpotifyAlbumDto> grid = searchGui.albumDtoGrid;
+		int receivedSize = grid.getDataProvider().size(new Query<>());
+		Assertions.assertEquals(0, receivedSize);
+	}
+
+	@Test
+	void searchGuiTest_searchBlankValue_emptyGrid() {
+
+		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
+		searchGui.searchTextField.setValue("        ");
 		searchGui.searchButton.click();
 
 		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq(""));
@@ -114,7 +129,6 @@ class SearchGuiTest {
 		searchGui.searchButton.click();
 
 		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
-
 		verify(sessionUtils, times(1)).expireCurrentSession();
 	}
 
@@ -124,7 +138,7 @@ class SearchGuiTest {
 		doThrow(new HttpClientErrorException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Server Error"))
 				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "krzysztof krawczyk");
 
-		String expectedNotification = "Error while searching: 500 Internal Server Error";
+		String expectedNotification = "Error while searching. HTTP status: Internal Server Error. Message: 500 Internal Server Error";
 		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
 		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
 		searchGui.searchButton.click();

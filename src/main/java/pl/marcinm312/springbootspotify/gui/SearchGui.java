@@ -8,7 +8,7 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.renderer.ComponentRenderer;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -21,6 +21,7 @@ import pl.marcinm312.springbootspotify.utils.VaadinUtils;
 
 import java.util.List;
 
+@Slf4j
 @Route("")
 @PageTitle("Music search")
 public class SearchGui extends VerticalLayout {
@@ -32,8 +33,6 @@ public class SearchGui extends VerticalLayout {
 
 	private final transient SpotifyAlbumClient spotifyAlbumClient;
 	private final transient SessionUtils sessionUtils;
-
-	private final transient org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
 	@Autowired
 	public SearchGui(SpotifyAlbumClient spotifyAlbumClient, SessionUtils sessionUtils) {
@@ -50,6 +49,16 @@ public class SearchGui extends VerticalLayout {
 		searchTextField = new TextField();
 		searchTextField.setLabel("Artist or track name:");
 
+		prepareSearchResultsGrid();
+
+		searchButton = new Button("Search!");
+		searchButton.addClickListener(event -> searchButtonClickEvent(authenticationToken));
+
+		add(logoutButton, searchTextField, searchButton, albumDtoGrid);
+	}
+
+	private void prepareSearchResultsGrid() {
+
 		albumDtoGrid = new Grid<>(SpotifyAlbumDto.class);
 		albumDtoGrid.removeColumnByKey("imageUrl");
 		albumDtoGrid.addColumn(new ComponentRenderer<>(albumDto -> {
@@ -58,27 +67,25 @@ public class SearchGui extends VerticalLayout {
 			return image;
 		})).setHeader("Image");
 		albumDtoGrid.setAllRowsVisible(true);
-
-		searchButton = new Button("Search!");
-		searchButton.addClickListener(event -> searchButtonClickEvent(authenticationToken));
-
-		add(logoutButton, searchTextField, searchButton, albumDtoGrid);
 	}
 
 	private void searchButtonClickEvent(OAuth2AuthenticationToken authenticationToken) {
+
 		log.info("----------------------------------------");
-		String searchValue = searchTextField.getValue().toLowerCase();
+		String searchValue = searchTextField.getValue().trim().toLowerCase();
 		log.info("searchValue={}", searchValue);
 		try {
 			List<SpotifyAlbumDto> albumList = spotifyAlbumClient.getAlbumsByAuthor(authenticationToken, searchValue);
 			log.info("albumList.size()={}", albumList.size());
 			albumDtoGrid.setItems(albumList);
 		} catch (HttpClientErrorException exc) {
-			log.error("Error while searching: {}", exc.getMessage());
+			String errorMessage = String.format("Error while searching. HTTP status: %s. Message: %s",
+					exc.getStatusText(), exc.getMessage());
+			log.error(errorMessage, exc);
 			if ("Unauthorized".equals(exc.getStatusText())) {
 				logoutActionWithReload();
 			} else {
-				VaadinUtils.showNotification("Error while searching: " + exc.getMessage());
+				VaadinUtils.showNotification(errorMessage);
 			}
 		} catch (Exception exc) {
 			String errorMessage = String.format("Error while searching: %s", exc.getMessage());
