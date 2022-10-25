@@ -1,16 +1,14 @@
 package pl.marcinm312.springbootspotify.service;
 
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClientService;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import pl.marcinm312.springbootspotify.model.SpotifyAlbum;
 import pl.marcinm312.springbootspotify.model.dto.SpotifyAlbumDto;
@@ -19,19 +17,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@RequiredArgsConstructor
+@Slf4j
 @Service
 public class SpotifyAlbumClient {
 
 	private final RestTemplate restTemplate;
 	private final OAuth2AuthorizedClientService authorizedClientService;
 
-	@Autowired
-	public SpotifyAlbumClient(RestTemplate restTemplate, OAuth2AuthorizedClientService authorizedClientService) {
-		this.restTemplate = restTemplate;
-		this.authorizedClientService = authorizedClientService;
-	}
-
-	private final org.slf4j.Logger log = LoggerFactory.getLogger(getClass());
 
 	public List<SpotifyAlbumDto> getAlbumsByAuthor(OAuth2AuthenticationToken authenticationToken, String authorName) {
 
@@ -39,17 +32,15 @@ public class SpotifyAlbumClient {
 			return new ArrayList<>();
 		}
 
-		String jwt = null;
-		if (authenticationToken != null) {
-			String authenticationName = authenticationToken.getName();
-			log.info("user={}", authenticationName);
-			OAuth2AuthorizedClient client = authorizedClientService.loadAuthorizedClient
-					(authenticationToken.getAuthorizedClientRegistrationId(), authenticationName);
-			jwt = client.getAccessToken().getTokenValue();
-		}
+		String jwt = getJwtFromAuthorization(authenticationToken);
 
 		ResponseEntity<SpotifyAlbum> exchange = getSpotifyAlbumResponseEntity(authorName, jwt);
-		log.info("status={}", exchange.getStatusCode());
+		HttpStatus httpStatus = exchange.getStatusCode();
+		log.info("status={}", httpStatus);
+
+		if (!httpStatus.is2xxSuccessful()) {
+			throw new HttpClientErrorException(httpStatus);
+		}
 
 		SpotifyAlbum spotifyAlbum = exchange.getBody();
 
@@ -63,7 +54,20 @@ public class SpotifyAlbumClient {
 				.collect(Collectors.toList());
 	}
 
+	private String getJwtFromAuthorization(OAuth2AuthenticationToken authenticationToken) {
+
+		if (authenticationToken == null) {
+			return null;
+		}
+		String authenticationName = authenticationToken.getName();
+		log.info("user={}", authenticationName);
+		OAuth2AuthorizedClient client = authorizedClientService.loadAuthorizedClient
+				(authenticationToken.getAuthorizedClientRegistrationId(), authenticationName);
+		return client.getAccessToken().getTokenValue();
+	}
+
 	private ResponseEntity<SpotifyAlbum> getSpotifyAlbumResponseEntity(String authorName, String jwt) {
+
 		HttpHeaders httpHeaders = new HttpHeaders();
 		if (jwt != null) {
 			httpHeaders.add("Authorization", "Bearer " + jwt);
