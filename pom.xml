@@ -14,11 +14,11 @@
     <name>springboot-vaadin-spotify</name>
     <description>Demo project for Spring Boot</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <!-- https://mvnrepository.com/artifact/com.vaadin/vaadin-core -->
-        <vaadin.version>14.8.20</vaadin.version>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <vaadin.version>14.9.1</vaadin.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -26,8 +26,10 @@
         <jacoco.version>0.8.8</jacoco.version>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-        <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+        <sonar.coverage.jacoco.xmlReportPaths>target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+        <sonar.dependencyCheck.htmlReportPath>target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
         <sonar.language>java</sonar.language>
+        <sonar.java.source>${java.version}</sonar.java.source>
     </properties>
 
     <pluginRepositories>
@@ -147,7 +149,7 @@
         <dependency>
             <groupId>nl.jqno.equalsverifier</groupId>
             <artifactId>equalsverifier</artifactId>
-            <version>3.10.1</version>
+            <version>3.11</version>
             <scope>test</scope>
         </dependency>
 
@@ -244,6 +246,26 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- https://mvnrepository.com/artifact/org.owasp/dependency-check-maven -->
+            <plugin>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+                <version>7.3.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>aggregate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <formats>
+                        <format>json</format>
+                        <format>html</format>
+                    </formats>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -307,7 +329,7 @@
                             </execution>
                         </executions>
                         <configuration>
-                            <nodeVersion>v16.18.0</nodeVersion>
+                            <nodeVersion>v18.12.1</nodeVersion>
                         </configuration>
                     </plugin>
                 </plugins>
