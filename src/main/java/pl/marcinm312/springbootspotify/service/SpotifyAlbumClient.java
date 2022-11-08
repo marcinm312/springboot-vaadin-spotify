@@ -15,7 +15,6 @@ import pl.marcinm312.springbootspotify.model.dto.SpotifyAlbumDto;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Slf4j
@@ -51,7 +50,7 @@ public class SpotifyAlbumClient {
 		return spotifyAlbum.getTracks().getItems()
 				.stream()
 				.map(item -> new SpotifyAlbumDto(item.getName(), item.getAlbum().getImages().get(0).getUrl()))
-				.collect(Collectors.toList());
+				.toList();
 	}
 
 	private String getJwtFromAuthorization(OAuth2AuthenticationToken authenticationToken) {
