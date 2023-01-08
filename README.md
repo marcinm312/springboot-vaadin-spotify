@@ -52,6 +52,6 @@ Using the example of IntelliJ IDE, select **JDK (Java) version 17**. Select the 
 Type the following commands from the root directory of the project:
 ```bash
 mvn clean package -P production
-java -Dfile.encoding=UTF-8 -jar springboot-vaadin-spotify-0.0.1-SNAPSHOT.jar
+java -Dfile.encoding=UTF-8 -jar target/springboot-vaadin-spotify-0.0.1-SNAPSHOT.jar
 ```
 In case of problems with building the project, delete the files: **package.json**, **package-lock.json**, from the root directory of the project and repeat the above step again.
