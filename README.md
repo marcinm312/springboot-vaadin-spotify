@@ -16,8 +16,8 @@
 
 ## Environment variables that need to be set:
 1. **LOGGING_FILE_NAME** - Log file path and name. Names can be an exact location (for instance, `C://logs/server.log`) or relative (for instance, `logs/server.log`) to the current directory (project root directory or directory containing packaged war/jar file). You can set an empty value ("" or " " - without quotes) when using only console logs (without saving logs to a file).
-2. **OAUTH2_CLIENT_ID** - **Client ID** copied from the Spotify application console.
-3. **OAUTH2_CLIENT_SECRET** - **Client Secret** copied from the Spotify application console.
+2. **SPOTIFY_OAUTH2_CLIENT_ID** - **Client ID** copied from the Spotify application console.
+3. **SPOTIFY_OAUTH2_CLIENT_SECRET** - **Client Secret** copied from the Spotify application console.
 
 ## Steps to Setup
 
