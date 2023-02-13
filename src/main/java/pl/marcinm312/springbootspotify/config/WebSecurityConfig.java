@@ -17,8 +17,10 @@ public class WebSecurityConfig {
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-		http.authorizeRequests().antMatchers("/").authenticated()
+		http.authorizeRequests()
 				.antMatchers("/log-out").permitAll()
+				.antMatchers("/log-out/**").permitAll()
+				.anyRequest().authenticated()
 				.and().oauth2Login().permitAll()
 				.and().csrf().disable()
 				.sessionManagement().maximumSessions(10000).maxSessionsPreventsLogin(false)
