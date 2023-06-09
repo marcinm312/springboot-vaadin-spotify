@@ -72,7 +72,7 @@ public class SearchGui extends VerticalLayout {
 	private void searchButtonClickEvent(OAuth2AuthenticationToken authenticationToken) {
 
 		log.info("----------------------------------------");
-		String searchValue = searchTextField.getValue().trim().toLowerCase();
+		String searchValue = searchTextField.getValue().trim();
 		log.info("searchValue={}", searchValue);
 		try {
 			List<SpotifyAlbumDto> albumList = spotifyAlbumClient.getAlbumsByAuthor(authenticationToken, searchValue);

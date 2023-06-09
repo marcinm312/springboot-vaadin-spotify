@@ -17,7 +17,9 @@ public class SessionUtils {
 	public void expireCurrentSession() {
 		String currentSessionId = RequestContextHolder.currentRequestAttributes().getSessionId();
 		SessionInformation sessionInformation = sessionRegistry.getSessionInformation(currentSessionId);
-		sessionInformation.expireNow();
+		if (sessionInformation != null) {
+			sessionInformation.expireNow();
+		}
 		log.info("Session {} has been expired", currentSessionId);
 	}
 }
