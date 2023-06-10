@@ -169,6 +169,7 @@ class SearchGuiTest {
 	private static Stream<Arguments> examplesOfSearchingWithIllegalCharacters() {
 		return Stream.of(
 				Arguments.of("Kombi!@#$%?"),
+				Arguments.of("Kombi!@$%?"),
 				Arguments.of("Krzysztof Krawczyk?#?#?#?#?#")
 		);
 	}
