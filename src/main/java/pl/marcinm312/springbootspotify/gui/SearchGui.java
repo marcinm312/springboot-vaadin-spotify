@@ -2,12 +2,15 @@ package pl.marcinm312.springbootspotify.gui;
 
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
+import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.renderer.ComponentRenderer;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.VaadinService;
+import com.vaadin.flow.server.VaadinServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -19,6 +22,7 @@ import pl.marcinm312.springbootspotify.model.dto.SpotifyAlbumDto;
 import pl.marcinm312.springbootspotify.utils.SessionUtils;
 import pl.marcinm312.springbootspotify.utils.VaadinUtils;
 
+import javax.validation.ValidationException;
 import java.util.List;
 
 @Slf4j
@@ -26,10 +30,12 @@ import java.util.List;
 @PageTitle("Music search")
 public class SearchGui extends VerticalLayout {
 
-	Button logoutButton;
+	Anchor logoutAnchor;
 	TextField searchTextField;
 	Button searchButton;
 	Grid<SpotifyAlbumDto> albumDtoGrid;
+
+	private static final String SEARCH_ERROR_FORMAT = "Error while searching: %s";
 
 	private final transient SpotifyAlbumClient spotifyAlbumClient;
 	private final transient SessionUtils sessionUtils;
@@ -43,8 +49,7 @@ public class SearchGui extends VerticalLayout {
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		OAuth2AuthenticationToken authenticationToken = (OAuth2AuthenticationToken) authentication;
 
-		logoutButton = new Button("Log out");
-		logoutButton.addClickListener(event -> logoutActionWithNavigate());
+		logoutAnchor = new Anchor("/logout", "Log out");
 
 		searchTextField = new TextField();
 		searchTextField.setLabel("Artist or track name:");
@@ -54,7 +59,7 @@ public class SearchGui extends VerticalLayout {
 		searchButton = new Button("Search!");
 		searchButton.addClickListener(event -> searchButtonClickEvent(authenticationToken));
 
-		add(logoutButton, searchTextField, searchButton, albumDtoGrid);
+		add(logoutAnchor, searchTextField, searchButton, albumDtoGrid);
 	}
 
 	private void prepareSearchResultsGrid() {
@@ -85,21 +90,37 @@ public class SearchGui extends VerticalLayout {
 			if ("Unauthorized".equals(exc.getStatusText())) {
 				logoutActionWithReload();
 			} else {
-				VaadinUtils.showNotification(errorMessage);
+				VaadinUtils.showNotification(errorMessage.replace("<EOL>", ""));
 			}
+		} catch (ValidationException exc) {
+			String errorMessage = String.format(SEARCH_ERROR_FORMAT, exc.getMessage());
+			log.error(errorMessage);
+			VaadinUtils.showNotification(errorMessage);
+		} catch (NullPointerException exc) {
+			String errorMessage = String.format(SEARCH_ERROR_FORMAT, exc.getMessage());
+			log.error(errorMessage, exc);
+			logoutActionWithFullReload();
+			VaadinUtils.showNotification(errorMessage);
 		} catch (Exception exc) {
-			String errorMessage = String.format("Error while searching: %s", exc.getMessage());
+			String errorMessage = String.format(SEARCH_ERROR_FORMAT, exc.getMessage());
 			log.error(errorMessage, exc);
 			VaadinUtils.showNotification(errorMessage);
 		}
 	}
 
-	private void logoutActionWithNavigate() {
+	private void logoutActionWithReload() {
 		sessionUtils.expireCurrentSession();
-		VaadinUtils.navigate("log-out/");
+		VaadinUtils.reloadCurrentPage();
 	}
 
-	private void logoutActionWithReload() {
+	private void logoutActionWithFullReload() {
+		VaadinServletRequest request = (VaadinServletRequest) VaadinService.getCurrentRequest();
+		try {
+			request.logout();
+		} catch (Exception e) {
+			String errorMessage = String.format("Error while reloading: %s", e.getMessage());
+			log.error(errorMessage, e);
+		}
 		sessionUtils.expireCurrentSession();
 		VaadinUtils.reloadCurrentPage();
 	}

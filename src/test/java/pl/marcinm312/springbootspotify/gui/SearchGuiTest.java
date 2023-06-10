@@ -188,13 +188,4 @@ class SearchGuiTest {
 		verify(sessionUtils, never()).expireCurrentSession();
 		mockedVaadinUtils.verify(() -> VaadinUtils.showNotification(eq(expectedNotification)), times(1));
 	}
-
-	@Test
-	void searchGuiTest_logout_success() {
-
-		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
-		searchGui.logoutButton.click();
-
-		verify(sessionUtils, times(1)).expireCurrentSession();
-	}
 }

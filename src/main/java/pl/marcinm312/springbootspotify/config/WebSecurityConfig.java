@@ -18,10 +18,14 @@ public class WebSecurityConfig {
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
 		http.authorizeRequests()
+
+				.antMatchers("/").authenticated()
 				.antMatchers("/log-out").permitAll()
 				.antMatchers("/log-out/**").permitAll()
-				.anyRequest().authenticated()
+
 				.and().oauth2Login().permitAll()
+				.and().logout().permitAll().logoutSuccessUrl("/log-out")
+
 				.and().csrf().disable()
 				.sessionManagement().maximumSessions(10000).maxSessionsPreventsLogin(false)
 				.expiredUrl("/oauth2/authorization/spotify").sessionRegistry(sessionRegistry());
