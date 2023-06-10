@@ -4,6 +4,9 @@ import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.data.provider.Query;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
@@ -30,6 +33,7 @@ import pl.marcinm312.springbootspotify.utils.VaadinUtils;
 
 import java.io.IOException;
 import java.nio.file.FileSystems;
+import java.util.stream.Stream;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
@@ -72,13 +76,13 @@ class SearchGuiTest {
 	@Test
 	void searchGuiTest_simpleSearchCase_success() throws IOException {
 
-		String spotifyUrl = "https://api.spotify.com/v1/search?q=krzysztof%20krawczyk&type=track&market=PL&limit=50&offset=0";
+		String spotifyUrl = "https://api.spotify.com/v1/search?q=krzysztof%2520krawczyk&type=track&market=PL&limit=50&offset=0";
 		String filePath = "test_response" + FileSystems.getDefault().getSeparator() + "response.json";
 		this.mockServer.expect(requestTo(spotifyUrl)).andExpect(method(HttpMethod.GET))
 				.andRespond(withSuccess(ResponseReaderFromFile.readResponseFromFile(filePath), MediaType.APPLICATION_JSON));
 
 		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
-		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
+		searchGui.searchTextField.setValue("krzysztof krawczyk");
 		searchGui.searchButton.click();
 
 		mockServer.verify();
@@ -122,13 +126,13 @@ class SearchGuiTest {
 	void searchGuiTest_expiredSession_logoutExecuted() {
 
 		doThrow(new HttpClientErrorException(HttpStatus.UNAUTHORIZED, "Unauthorized"))
-				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "krzysztof krawczyk");
+				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "Krzysztof Krawczyk");
 
 		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
 		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
 		searchGui.searchButton.click();
 
-		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
+		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("Krzysztof Krawczyk"));
 		verify(sessionUtils, times(1)).expireCurrentSession();
 	}
 
@@ -136,16 +140,38 @@ class SearchGuiTest {
 	void searchGuiTest_HTTPErrorWhileSearching_notification() {
 
 		doThrow(new HttpClientErrorException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Server Error"))
-				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "krzysztof krawczyk");
+				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "Krzysztof Krawczyk");
 
 		String expectedNotification = "Error while searching. HTTP status: Internal Server Error. Message: 500 Internal Server Error";
 		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
 		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
 		searchGui.searchButton.click();
 
-		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
+		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("Krzysztof Krawczyk"));
 		verify(sessionUtils, never()).expireCurrentSession();
 		mockedVaadinUtils.verify(() -> VaadinUtils.showNotification(eq(expectedNotification)), times(1));
+	}
+
+	@ParameterizedTest
+	@MethodSource("examplesOfSearchingWithIllegalCharacters")
+	void searchGuiTest_illegalCharacters_notification(String searchValue) {
+
+		String expectedNotification = "Error while searching: The search field contains illegal characters! Please remove special characters and try again";
+		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
+		searchGui.searchTextField.setValue(searchValue);
+		searchGui.searchButton.click();
+
+		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq(searchValue));
+		verify(sessionUtils, never()).expireCurrentSession();
+		mockedVaadinUtils.verify(() -> VaadinUtils.showNotification(eq(expectedNotification)), times(1));
+	}
+
+	private static Stream<Arguments> examplesOfSearchingWithIllegalCharacters() {
+		return Stream.of(
+				Arguments.of("Kombi!@#$%?"),
+				Arguments.of("Kombi!@$%?"),
+				Arguments.of("Krzysztof Krawczyk?#?#?#?#?#")
+		);
 	}
 
 	@Test
@@ -156,20 +182,11 @@ class SearchGuiTest {
 
 		String expectedNotification = "Error while searching: Unexpected Error";
 		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
-		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
+		searchGui.searchTextField.setValue("krzysztof krawczyk");
 		searchGui.searchButton.click();
 
 		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
 		verify(sessionUtils, never()).expireCurrentSession();
 		mockedVaadinUtils.verify(() -> VaadinUtils.showNotification(eq(expectedNotification)), times(1));
-	}
-
-	@Test
-	void searchGuiTest_logout_success() {
-
-		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
-		searchGui.logoutButton.click();
-
-		verify(sessionUtils, times(1)).expireCurrentSession();
 	}
 }

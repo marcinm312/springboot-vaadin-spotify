@@ -12,6 +12,9 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import pl.marcinm312.springbootspotify.model.SpotifyAlbum;
 import pl.marcinm312.springbootspotify.model.dto.SpotifyAlbumDto;
+import pl.marcinm312.springbootspotify.utils.StringMethods;
+
+import javax.validation.ValidationException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,8 +76,13 @@ public class SpotifyAlbumClient {
 		}
 		HttpEntity<Object> httpEntity = new HttpEntity<>(httpHeaders);
 
-		String url = "https://api.spotify.com/v1/search?q=" + authorName + "&type=track&market=PL&limit=50&offset=0";
+		String url = "https://api.spotify.com/v1/search?q=" + authorName.replace(" ", "%20") + "&type=track&market=PL&limit=50&offset=0";
 		log.info("url={}", url);
+		if (!StringMethods.isValidUrl(url)) {
+			String errorMessage = "The search field contains illegal characters! Please remove special characters and try again";
+			log.error(errorMessage);
+			throw new ValidationException(errorMessage);
+		}
 
 		return restTemplate.exchange(
 				url,
