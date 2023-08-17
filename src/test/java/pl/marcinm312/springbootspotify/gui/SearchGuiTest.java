@@ -1,6 +1,5 @@
 package pl.marcinm312.springbootspotify.gui;
 
-import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.data.provider.Query;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -25,7 +24,6 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import pl.marcinm312.springbootspotify.config.BeansConfig;
 
-import pl.marcinm312.springbootspotify.model.dto.SpotifyAlbumDto;
 import pl.marcinm312.springbootspotify.service.SpotifyAlbumClient;
 import pl.marcinm312.springbootspotify.testdataprovider.ResponseReaderFromFile;
 import pl.marcinm312.springbootspotify.utils.SessionUtils;
@@ -82,44 +80,34 @@ class SearchGuiTest {
 				.andRespond(withSuccess(ResponseReaderFromFile.readResponseFromFile(filePath), MediaType.APPLICATION_JSON));
 
 		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
-		searchGui.searchTextField.setValue("krzysztof krawczyk");
-		searchGui.searchButton.click();
+		searchGui.getSearchTextField().setValue("krzysztof krawczyk");
+		searchGui.getSearchButton().click();
 
 		mockServer.verify();
 		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
-
-		Grid<SpotifyAlbumDto> grid = searchGui.albumDtoGrid;
-		int expectedGridSize = 50;
-		int receivedGridSize = grid.getDataProvider().size(new Query<>());
-		Assertions.assertEquals(expectedGridSize, receivedGridSize);
+		int receivedGridSize = searchGui.getAlbumDtoGrid().getDataProvider().size(new Query<>());
+		Assertions.assertEquals(50, receivedGridSize);
 	}
 
-	@Test
-	void searchGuiTest_searchEmptyValue_emptyGrid() {
+	@ParameterizedTest
+	@MethodSource("examplesOfEmptySearch")
+	void searchGuiTest_searchEmptyValue_emptyGrid(String searchValue) {
 
 		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
-		searchGui.searchTextField.setValue("");
-		searchGui.searchButton.click();
+		searchGui.getSearchTextField().setValue(searchValue);
+		searchGui.getSearchButton().click();
 
 		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq(""));
-
-		Grid<SpotifyAlbumDto> grid = searchGui.albumDtoGrid;
-		int receivedSize = grid.getDataProvider().size(new Query<>());
+		int receivedSize = searchGui.getAlbumDtoGrid().getDataProvider().size(new Query<>());
 		Assertions.assertEquals(0, receivedSize);
 	}
 
-	@Test
-	void searchGuiTest_searchBlankValue_emptyGrid() {
+	private static Stream<Arguments> examplesOfEmptySearch() {
 
-		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
-		searchGui.searchTextField.setValue("        ");
-		searchGui.searchButton.click();
-
-		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq(""));
-
-		Grid<SpotifyAlbumDto> grid = searchGui.albumDtoGrid;
-		int receivedSize = grid.getDataProvider().size(new Query<>());
-		Assertions.assertEquals(0, receivedSize);
+		return Stream.of(
+				Arguments.of(""),
+				Arguments.of("        ")
+		);
 	}
 
 	@Test
@@ -129,44 +117,29 @@ class SearchGuiTest {
 				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "Krzysztof Krawczyk");
 
 		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
-		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
-		searchGui.searchButton.click();
+		searchGui.getSearchTextField().setValue("Krzysztof Krawczyk");
+		searchGui.getSearchButton().click();
 
 		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("Krzysztof Krawczyk"));
 		verify(sessionUtils, times(1)).expireCurrentSession();
-	}
-
-	@Test
-	void searchGuiTest_HTTPErrorWhileSearching_notification() {
-
-		doThrow(new HttpClientErrorException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Server Error"))
-				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "Krzysztof Krawczyk");
-
-		String expectedNotification = "Error while searching. HTTP status: Internal Server Error. Message: 500 Internal Server Error";
-		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
-		searchGui.searchTextField.setValue("Krzysztof Krawczyk");
-		searchGui.searchButton.click();
-
-		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("Krzysztof Krawczyk"));
-		verify(sessionUtils, never()).expireCurrentSession();
-		mockedVaadinUtils.verify(() -> VaadinUtils.showNotification(eq(expectedNotification)), times(1));
 	}
 
 	@ParameterizedTest
 	@MethodSource("examplesOfSearchingWithIllegalCharacters")
 	void searchGuiTest_illegalCharacters_notification(String searchValue) {
 
-		String expectedNotification = "Error while searching: The search field contains illegal characters! Please remove special characters and try again";
 		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
-		searchGui.searchTextField.setValue(searchValue);
-		searchGui.searchButton.click();
+		searchGui.getSearchTextField().setValue(searchValue);
+		searchGui.getSearchButton().click();
 
 		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq(searchValue));
 		verify(sessionUtils, never()).expireCurrentSession();
+		String expectedNotification = "Error while searching: The search field contains illegal characters! Please remove special characters and try again";
 		mockedVaadinUtils.verify(() -> VaadinUtils.showNotification(eq(expectedNotification)), times(1));
 	}
 
 	private static Stream<Arguments> examplesOfSearchingWithIllegalCharacters() {
+
 		return Stream.of(
 				Arguments.of("Kombi!@#$%?"),
 				Arguments.of("Kombi!@$%?"),
@@ -174,19 +147,31 @@ class SearchGuiTest {
 		);
 	}
 
-	@Test
-	void searchGuiTest_otherErrorWhileSearching_notification() {
+	@ParameterizedTest
+	@MethodSource("examplesOfErrors")
+	void searchGuiTest_otherErrorWhileSearching_notification(Throwable throwable, String searchValue, String expectedNotification) {
 
-		doThrow(new RuntimeException("Unexpected Error"))
-				.when(spotifyAlbumClient).getAlbumsByAuthor(null, "krzysztof krawczyk");
+		doThrow(throwable)
+				.when(spotifyAlbumClient).getAlbumsByAuthor(null, searchValue);
 
-		String expectedNotification = "Error while searching: Unexpected Error";
 		SearchGui searchGui = new SearchGui(spotifyAlbumClient, sessionUtils);
-		searchGui.searchTextField.setValue("krzysztof krawczyk");
-		searchGui.searchButton.click();
+		searchGui.getSearchTextField().setValue(searchValue);
+		searchGui.getSearchButton().click();
 
-		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq("krzysztof krawczyk"));
+		verify(spotifyAlbumClient, times(1)).getAlbumsByAuthor(any(), eq(searchValue));
 		verify(sessionUtils, never()).expireCurrentSession();
 		mockedVaadinUtils.verify(() -> VaadinUtils.showNotification(eq(expectedNotification)), times(1));
+	}
+
+	private static Stream<Arguments> examplesOfErrors() {
+
+		return Stream.of(
+				Arguments.of(new HttpClientErrorException(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Server Error"),
+						"Krzysztof Krawczyk",
+						"Error while searching. HTTP status: Internal Server Error. Message: 500 Internal Server Error"),
+				Arguments.of(new RuntimeException("Unexpected Error"),
+						"krzysztof krawczyk",
+						"Error while searching: Unexpected Error")
+		);
 	}
 }
