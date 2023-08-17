@@ -11,6 +11,8 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.VaadinService;
 import com.vaadin.flow.server.VaadinServletRequest;
+import lombok.AccessLevel;
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -25,15 +27,16 @@ import pl.marcinm312.springbootspotify.utils.VaadinUtils;
 import javax.validation.ValidationException;
 import java.util.List;
 
+@Getter(AccessLevel.PACKAGE)
 @Slf4j
 @Route("")
 @PageTitle("Music search")
 public class SearchGui extends VerticalLayout {
 
-	Anchor logoutAnchor;
-	TextField searchTextField;
-	Button searchButton;
-	Grid<SpotifyAlbumDto> albumDtoGrid;
+	private final Anchor logoutAnchor;
+	private final TextField searchTextField;
+	private final Button searchButton;
+	private Grid<SpotifyAlbumDto> albumDtoGrid;
 
 	private static final String SEARCH_ERROR_FORMAT = "Error while searching: %s";
 
