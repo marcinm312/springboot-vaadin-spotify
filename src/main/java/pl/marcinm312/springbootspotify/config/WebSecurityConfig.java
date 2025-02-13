@@ -8,12 +8,10 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.session.SessionRegistry;
 import org.springframework.security.core.session.SessionRegistryImpl;
-import org.springframework.security.oauth2.client.oidc.web.logout.OidcClientInitiatedLogoutSuccessHandler;
 import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
 import org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizationRequestResolver;
 import org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestCustomizers;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 import org.springframework.security.web.session.HttpSessionEventPublisher;
 
 @Configuration
@@ -40,8 +38,8 @@ public class WebSecurityConfig {
 						oauth2 -> oauth2
 								.authorizationEndpoint(authorization -> authorization
 										.authorizationRequestResolver(authorizationRequestResolver))
+								.failureHandler(new CustomOAuth2FailureHandler())
 				)
-				//.logout(logout -> logout.permitAll().logoutSuccessHandler(logoutSuccessHandler()))
 				.logout().permitAll().logoutSuccessUrl("/log-out").and()
 
 				.csrf().disable()
@@ -59,11 +57,4 @@ public class WebSecurityConfig {
 	public static ServletListenerRegistrationBean<HttpSessionEventPublisher> httpSessionEventPublisher() {
 		return new ServletListenerRegistrationBean<>(new HttpSessionEventPublisher());
 	}
-
-	/*private LogoutSuccessHandler logoutSuccessHandler() {
-		OidcClientInitiatedLogoutSuccessHandler logoutSuccessHandler = new OidcClientInitiatedLogoutSuccessHandler(this.clientRegistrationRepository);
-		logoutSuccessHandler.setPostLogoutRedirectUri("{baseUrl}/log-out");
-
-		return logoutSuccessHandler;
-	}*/
 }
