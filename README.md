@@ -39,7 +39,7 @@ git clone https://github.com/marcinm312/springboot-vaadin-spotify.git
 
 #### 4. Create a launch configuration in your favorite IDE
 
-Using the example of IntelliJ IDE, select **JDK (Java) version 17**. Select the main class: `pl.marcinm312.springbootspotify.SpringbootVaadinSpotifyApplication` and set the environment variables as described above.
+Using the example of IntelliJ IDE, select **JDK (Java) version 21**. Select the main class: `pl.marcinm312.springbootspotify.SpringbootVaadinSpotifyApplication` and set the environment variables as described above.
 
 #### 5. Run the application using the configuration created in the previous step.
 
