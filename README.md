@@ -1,6 +1,8 @@
 # Spotify Track Search Application
 
-## Functions:
+This application allows you to search for songs on the Spotify platform, using your Spotify account.
+
+## Functionalities:
 1. Searching for songs on Spotify;
 2. Login to the app using your Spotify account.
 
