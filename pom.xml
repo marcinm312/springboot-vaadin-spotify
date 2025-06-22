@@ -222,6 +222,7 @@
                     <environmentVariables>
                         <LOGGING_FILE_NAME/>
                         <TIME_ZONE>Europe/Warsaw</TIME_ZONE>
+                        <SPOTIFY_TIMEOUT>5</SPOTIFY_TIMEOUT>
                     </environmentVariables>
                 </configuration>
             </plugin>
