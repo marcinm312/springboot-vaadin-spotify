@@ -1,6 +1,8 @@
 # Spotify Track Search Application
 
-## Functions:
+This application allows you to search for songs on the Spotify platform, using your Spotify account.
+
+## Functionalities:
 1. Searching for songs on Spotify;
 2. Login to the app using your Spotify account.
 
@@ -15,9 +17,13 @@
 8. Lombok
 
 ## Environment variables that need to be set:
-1. **LOGGING_FILE_NAME** - Log file path and name. Names can be an exact location (for instance, `C://logs/server.log`) or relative (for instance, `logs/server.log`) to the current directory (project root directory or directory containing packaged war/jar file). You can set an empty value ("" or " " - without quotes) when using only console logs (without saving logs to a file).
-2. **SPOTIFY_OAUTH2_CLIENT_ID** - **Client ID** copied from the Spotify application console.
-3. **SPOTIFY_OAUTH2_CLIENT_SECRET** - **Client Secret** copied from the Spotify application console.
+
+|               Name               | Description                                                                                                                                                                                                                                                                                                                                                      |                 Example value                 | Default value |
+|:--------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------:|:-------------:|
+|      **LOGGING_FILE_NAME**       | Log file path and name. Names can be an exact location (for instance, `C://logs/server.log`) or relative (for instance, `logs/server.log`) to the current directory (project root directory or directory containing packaged war/jar file). You can set an empty value ("" or " " - without quotes) when using only console logs (without saving logs to a file) | `logs/server.log`, `C://logs/server.log`, ` ` |               |
+|   **SPOTIFY_OAUTH2_CLIENT_ID**   | **Client ID** copied from the Spotify application console                                                                                                                                                                                                                                                                                                        |               `abc123abc123abc`               |               |                                                                                                                                                                                                                                                                                                       
+| **SPOTIFY_OAUTH2_CLIENT_SECRET** | **Client Secret** copied from the Spotify application console                                                                                                                                                                                                                                                                                                    |               `abc123abc123abc`               |               |                                                                                                                                                                                                                                                                                                   
+|       **SPOTIFY_TIMEOUT**        | Spotify server timeout (expressed in seconds)                                                                                                                                                                                                                                                                                                                    |                     `30`                      |     `15`      |
 
 ## Steps to Setup
 

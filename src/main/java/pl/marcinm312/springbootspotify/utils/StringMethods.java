@@ -3,7 +3,7 @@ package pl.marcinm312.springbootspotify.utils;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
-import java.net.URL;
+import java.net.URI;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class StringMethods {
@@ -14,7 +14,7 @@ public class StringMethods {
 			return false;
 		}
 		try {
-			new URL(url).toURI();
+			new URI(url);
 			return true;
 		} catch (Exception e) {
 			return false;
