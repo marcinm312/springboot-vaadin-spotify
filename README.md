@@ -1,5 +1,11 @@
 # Spotify Track Search Application
 
+> [!WARNING]
+> **DEPRECATED** \
+> \
+> The repository of the new version of the application is available at the link:
+> https://github.com/marcinm312/springboot-spotify-track-search
+
 This application allows you to search for songs on the Spotify platform, using your Spotify account.
 
 ## Functionalities:
