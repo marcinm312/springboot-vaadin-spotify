@@ -35,7 +35,7 @@ This application allows you to search for songs on the Spotify platform, using y
 
 #### 1. Configure Spotify Developer account 
 
-Go to: https://developer.spotify.com/dashboard/. Create a free Spotify account (if you don't have one) and log in to Spotify Developer. Then create the app following the instructions on the browser screen. In the next step, add the following **Redirect URI**: `http://localhost:8080/login/oauth2/code/spotify`. From the Spotify application console, copy the **Client ID** and **Client Secret** information.
+Go to: https://developer.spotify.com/dashboard/. Create a free Spotify account (if you don't have one) and log in to Spotify Developer. Then create the app following the instructions on the browser screen. In the next step, add the following **Redirect URI**: `http://127.0.0.1:8080/login/oauth2/code/spotify`. From the Spotify application console, copy the **Client ID** and **Client Secret** information.
 
 #### 2. Install Node.js LTS
 
